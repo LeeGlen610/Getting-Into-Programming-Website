@@ -1,0 +1,45 @@
+.CodeTabs{
+	overflow: hidden;
+	border: 5px solid #ccc;
+	border-bottom: none;
+}
+
+#DefaultLanguage{
+	display: show;
+}
+
+.CodeTabs button{
+	background-color: #203B43;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 30px;
+	transition: 0.5s;
+	color: white
+}
+
+.CodeTabs button:hover{
+	background-color: #0D77C2;
+}
+
+.CodeTabs button.active{
+	background-color: #0C9AFE;
+}
+
+.ContentOfTheTab{
+	display: none;
+	padding: 14px 30px;
+	border: 5px solid #ccc;
+	border-top: none;
+	color: white;
+}
+.ContentOfTheTab{
+	animation: fadeEffect 1s;
+	
+}
+
+@keyframes fadeEffect{
+	from{opacity: 0}
+	to{opacity: 1}
+}

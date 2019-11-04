@@ -1,0 +1,53 @@
+.VerticalMenu{
+	height: auto;
+	width: 315px;
+	position: absolute;
+	z-index: 1;
+	top: 190px;
+	left: 0;
+	background: #203B43;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+#MainBody{
+	margin-left: 310px;
+	font-size: 20px;
+	padding: 0px, 10px;
+}
+
+#MainBody h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.VerticalMenu a, .DropdownBtn{
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #EEEEEE;
+	display: block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+.active{
+	background-color: 0D77C2;
+	color: black;
+}
+
+.DropdownContainer{
+	display: none;
+	background-color: #090D0F;
+	padding-left: 8px;
+}
+
+@media only screen and (max-width: 811px){
+	.VerticalMenu{
+		top:210px;
+	}
+}

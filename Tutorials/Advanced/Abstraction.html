@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
+<link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
+<link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Abstraction</title>
+</head>
+
+<body>
+	<div id="TitleArea">
+	<img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
+	<span class="WebsiteTitle">Getting Into Programming</span>
+	<input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
+	<input type="submit" class="SearchButton"/>
+	<p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a href="../../contact.html">Contact</a></p>	
+	<hr />
+		
+		
+	</div>
+	<div class="VerticalMenu">
+	<button class="DropdownBtn">Getting Started &#9660</button>
+	<div class="DropdownContainer">
+	<a href="../Getting Started/Introduction.html">Introduction</a>
+	<a href="../Getting Started/Before Starting.html">Before Starting</a>
+	<a href="../Getting Started/Setting up an IDE.html">Setting up an IDE</a>
+	<a href="../Getting Started/Hello World.html">Hello World</a>
+	</div>
+	<button class="DropdownBtn">Beginner &#9660</button>
+	<div class="DropdownContainer">
+	<a href="../Beginner/Data Types.html">Data Types</a>
+	<a href="../Beginner/Calculations.html">Calculations</a>
+	<a href="../Beginner/If Statements.html">IF Statements</a>
+	<a href="../Beginner/Loops.html">Loops</a>
+	</div>
+	<button class="DropdownBtn">Intermediate &#9660</button>
+	<div class="DropdownContainer">
+	<a href="../Intermediate/Methods.html">Methods</a>
+	<a href="../Intermediate/Arrays.html">Arrays</a>
+	<a href="../Intermediate/String Manipulation.html">String Manipulation</a>
+	<a href="../Intermediate/Try-Catch.html">Try/Catch</a>
+	</div>
+	<button class="DropdownBtn">Advanced &#9660</button>
+	<div class="DropdownContainer">
+	<a href="OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
+	<a href="Classes.html">Classes</a>
+	<a href="Encapsulation & Constructors.html">Encapsulation And Constructors</a>
+	<a href="Instantation.html">Instantation</a>
+	<a href="Inheritance.html">Inheritance</a>
+	<a href="Overloading & Overriding.html">Overloading And Overriding</a>
+	<a href="Abstraction.html">Abstraction</a>
+	</div>
+	</div>
+	<div id="MainBody">
+	<h1>Abstraction</h1>
+	<a class="BackwardArrow" href="Overloading & Overriding.html">&#9668 Backward</a>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero. Cras commodo nisl vel
+            dolor ullamcorper consectetur. Morbi porttitor, massa at malesuada sollicitudin, arcu erat efficitur nunc,
+            sit amet tempor orci metus at urna. Etiam efficitur dui ac neque semper tincidunt. Donec euismod facilisis
+            gravida. Donec posuere fringilla est, vestibulum dictum velit hendrerit pretium. Sed orci arcu, consequat
+            eget magna eu, dignissim lobortis augue. Aenean et sollicitudin quam. Nulla dapibus, urna a condimentum
+            placerat, lorem ipsum euismod elit, non tincidunt est felis eu neque.</p>
+		<img class="FirstImg" src="../../Images/Image 1.jpg" alt="AL"/>
+		<div class="CodeTabs">
+		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
+		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
+		<button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
+		</div>
+		
+	  <div id="Java" class="ContentOfTheTab">
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		</p>
+		</div>
+	  <div id="C++" class="ContentOfTheTab">
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		</p>
+		</div>
+	  <div id="Python" class="ContentOfTheTab">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		</div>
+	</div>
+	<script>
+	var dropdownMenu = document.getElementsByClassName("DropdownBtn");
+	var i;
+	for (i = 0; i < dropdownMenu.length; i++) {
+		dropdownMenu[i].addEventListener("click", function () {
+			this.classList.toggle("active");
+			var dropdownContent = this.nextElementSibling;
+			if (dropdownContent.style.display === "block") {
+				dropdownContent.style.display = "none";
+			} else {
+				dropdownContent.style.display = "block";
+			}
+		})
+	}
+</script>
+<script>
+	function enterCode(event, programmingLanguage) {
+		var content, links;
+
+		content = document.getElementsByClassName("ContentOfTheTab");
+		for (var i = 0; i < content.length; i++) {
+			content[i].style.display = "none";
+		}
+
+		links = document.getElementsByClassName("CodeLink");
+		for (var i = 0; i < content.length; i++) {
+			links[i].className = links[i].className.replace(" active", "");
+		}
+
+		document.getElementById(programmingLanguage).style.display = "block";
+		event.currentTarget.className += " active";
+		document.getElementById("DefaultLanguage").click;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" content="Contact Page">
+<title>Contact</title>
+<link href="CSS/Programming Style.css" rel="stylesheet" type="text/css"/>
+<link href="Bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<div id="TitleArea">
+	<img class="TitleImage" src="Images/Image of Code.jpg" alt="An Image of Code."/>
+	<span class="WebsiteTitle">Getting Into Programming</span>
+	<input type="text" class="SearchBox" placeholder="Search Google"/>
+	<button class="SearchButton" type="submit">Search</button>
+	<p id="Menu"><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a></p>	
+	<hr  />
+	</div>
+<h1 class="PageName">Contact Us</h1>
+	<div id="ContactBody"><span class="ContactText"> Email: LeeGlen610@outlook.com <br>
+	Phone Number: 07368 337937
+		<br>Location: University of Stirling, Cottrell Building
+		</span>
+	  <div id=Map>
+<script>
+function initialiseMap(){
+	var location = {lat: 56.144504, lng: -3.920730};
+	var theMap = new google.maps.Map(document.getElementById('Map'), {zoom: 2, center: location});	
+	var thePoint = new google.maps.Marker({position: location, map: theMap});
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6TRx3YzjcrbKaGUyBW1OxP-fUpqk3D9g&callback=initialiseMap">
+</script>
+	</div>	
+</div>
+</body>
+</html>
