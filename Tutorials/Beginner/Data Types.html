@@ -56,22 +56,108 @@
 	<h1>Data Types</h1>
 	<a class="BackwardArrow" href="../Getting Started/Hello World.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="Calculations.html">Foward &#9658</a>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero. Cras commodo nisl vel
-            dolor ullamcorper consectetur. Morbi porttitor, massa at malesuada sollicitudin, arcu erat efficitur nunc,
-            sit amet tempor orci metus at urna. Etiam efficitur dui ac neque semper tincidunt. Donec euismod facilisis
-            gravida. Donec posuere fringilla est, vestibulum dictum velit hendrerit pretium. Sed orci arcu, consequat
-            eget magna eu, dignissim lobortis augue. Aenean et sollicitudin quam. Nulla dapibus, urna a condimentum
-            placerat, lorem ipsum euismod elit, non tincidunt est felis eu neque.</p>
-		<img class="FirstImg" src="../../Images/Image 1.jpg" alt="AL"/>
+	<p>Primitive data types is used to specify what data you will be using or storing and there is 8 type of primitive data.
+	</p>
+
+		<table>
+			<tr>
+				<th>Type</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>
+					int
+				</td>
+				<td>
+					Used to store whole numbers - limit is 2,147,483,648 and -2,147,483,648.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					long
+				</td>
+				<td>
+					Used to store very large whole numbers. More than likely to use when number can't be stored in an int.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					char
+				</td>
+				<td>
+					Used to store one character.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					byte
+				</td>
+				<td>
+					Similar to int but can only store from -128 to 127.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					short
+				</td>
+				<td>
+					Similar to int but can only store from -32,768 to 32,767.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					double
+				</td>
+				<td>
+					Used to store floating point numbers.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					float
+				</td>
+				<td>
+					Similarly to double, can be used to store floating point numbers and could be used instead of double if you want to save memory.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					boolean
+				</td>
+				<td>
+					Used to store true or false - used like a flag.
+				</td>
+			</tr>
+		</table>
+
+		<p>Variables are used in junction with data types to store data.</p>
+
+		<h1>Variables</h1>
+
+		<p>Variables are used to store data of some type to be used at a later date.</p>
+
+		<p>To create a variable you start with the data type you'd want to use and then the variable name usually in camelcase - this mean if the name of the variable is two words for example the number it should be theNumber -
+			then depending or not you are entering data into the variable you'll have an equals and then the data you're entering or close the line of code. </p>
+
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
 		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
 		<button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
 		</div>
-		
 	  <div id="Java" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+
+		  <p>
+		public class Main {
+			public static void main(String[] args){
+			int number;
+			double doubleNumber;
+			char character;
+
+			  number = 0;
+
+			  System.out.println(number);
+			}
+			}
 		</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
