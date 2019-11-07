@@ -56,13 +56,12 @@
 	<h1>Calculations</h1>
 	<a class="BackwardArrow" href="Data Types.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="If Statements.html">Foward &#9658</a>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero. Cras commodo nisl vel
-            dolor ullamcorper consectetur. Morbi porttitor, massa at malesuada sollicitudin, arcu erat efficitur nunc,
-            sit amet tempor orci metus at urna. Etiam efficitur dui ac neque semper tincidunt. Donec euismod facilisis
-            gravida. Donec posuere fringilla est, vestibulum dictum velit hendrerit pretium. Sed orci arcu, consequat
-            eget magna eu, dignissim lobortis augue. Aenean et sollicitudin quam. Nulla dapibus, urna a condimentum
-            placerat, lorem ipsum euismod elit, non tincidunt est felis eu neque.</p>
-		<img class="FirstImg" src="../../Images/Image 1.jpg" alt="AL"/>
+	<p>For calculations you have your addition, subtraction, multiply, divide and modulus.</p>
+		<p>Addition - +</p>
+		<p>Subtraction - -</p>
+		<p>Multiply - *</p>
+		<p>Divide - /</p>
+		<p>Modulus - %</p>
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
 		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
@@ -70,23 +69,52 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
-		  <p>public class HelloWorld{</p>
+		  <p>public class Main{</p>
 		  <p>public static void main(String[] args){</p>
-		  <p>System.out.println("Hello World");</p>
+		  <p>int number = 5;</p>
+		  <p><br>number = number + 5; //OR you can do number += 5</p>
+		  <p>System.out.println(number);</p>
+		  <p>number = number - 9; //OR you can do number -= 9</p>
+		  <p>System.out.println(number);</p>
+		  <p>number = number * 4;</p>
+		  <p>System.out.println(number);</p>
+		  <p>number = number / 2;</p>
+		  <p>System.out.println(number);</p>
+		  <p>number = number % 2;</p>
+		  <p>System.out.println(number);</p>
 		  <p>}</p>
 		<p>}</p>
-		 <p>
-		 <hr />
-		<video class="TutorialVideos" src="../../Videos/Hello World.mp4" controls></video>
-		</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		<p>#include &lt;iostream&gt;</p>
+		  <p>using namespace std;</p>
+		  <p><br>int main(){</p>
+		  <p>int number = 5;</p>
+		  <p><br>number = number +5; //OR you can do number += 5</p>
+		  <p>cout << number << endl;</p>
+		  <p>number = number - 9; //OR you can do number -= 9</p>
+		  <p>cout << number << endl;</p>
+		  <p>number = number * 4;</p>
+		  <p>cout << number << endl;</p>
+		  <p>number = number / 2;</p>
+		  <p>cout << number << endl;</p>
+		  <p>number = number % 2;</p>
+		  <p>cout << number << endl;</p>
+		  <p>return 0;</p>
+		  <p>}</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		  <p>int number = 5;</p>
+		  <p><br>number = number +5; //OR you can do number += 5</p>
+		  <p>print(number)</p>
+		  <p>number = number - 9; //OR you can do number -= 9</p>
+		  <p>print(number)</p>
+		  <p>number = number * 4;</p>
+		  <p>print(number)</p>
+		  <p>number = number / 2;</p>
+		  <p>print(number)</p>
+		  <p>number = number % 2;</p>
+		  <p>print(number)</p>
 		</div>
 	</div>
 	<script>

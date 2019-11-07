@@ -56,7 +56,9 @@
 	<h1>IF Statements</h1>
 	<a class="BackwardArrow" href="Calculations.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="Loops.html">Foward &#9658</a>
-	<p>Hello and welcome to the tutorial. This website will help you </p>
+	<p>IF statements are used to check if an condition is true or not so for example if a number isn't equal to twenty it will not display a message
+	but if it matches then it will display a message.</p>
+		<p>There is four types of IF statements: <ul><li>IF</li><li>IF/ELSE IF</li><li>IF/ELSE</li><li>SWITCH</li></ul></p>
 		<img class="TutorialImg" src="../../Images/Image 1.jpg" alt="AL"/>
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
@@ -65,17 +67,30 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		<p>public class Main {</p>
+		  <p>public static void main(String[] args){</p>
+		  <p>int number = 10;</p>
+		  <p>if (number == 10) { //double equals is an operator to check if the data in number matches 10.</p>
+		  <p>System.out.println("Hello");</p>
+		  <p>}</p>
+
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		<p>#include &lt;iostream&gt;</p>
+		  <p>using namespace std;</p>
+		  <p>int main(){</p>
+		  <p>int number = 10;</p>
+		  <p>if (number == 10) { //double equals is an operator to check if the data in number matches</p>
+		  <p>cout << "Hello" << endl;</p>
+		  <p>}</p>
+		  <p>return 0;</p>
+		  <p>}</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		<p>int number = 10</p>
+		  <p>if (number == 10){ //double equals is an operator to check if the data in number matches</p>
+		  <p>print("Hello")</p>
+		  <p>}</p>
 		</div>
 	</div>
 <script>
