@@ -56,7 +56,17 @@
 	<h1>String Manipulation</h1>
 	<a class="BackwardArrow" href="String Manipulation.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="Try-Catch.html">Foward &#9658</a>
-	<p>Hello and welcome to the tutorial. This website will help you </p>
+	<p>String is an array of characters that allows you to store text. However string isn't a data type as it is an object. We'll come to objects when we talk about
+	Object-oriented programming. We can manipulate string in a lot of ways.</p>
+		<p>We can:</p>
+		<ul>
+			<li>Find the length of a string.</li>
+			<li>Add two strings together.</li>
+			<li>Change all the characters into uppercase characters.</li>
+			<li>Check to see if two text are equal to each other. - This is different than using the double equals operator as it will check the object instead
+			of the text.</li>
+		</ul>
+		<p>and many more...</p>
 		<img class="TutorialImg" src="../../Images/Image 1.jpg" alt="AL"/>
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
@@ -65,17 +75,46 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		<p>public class main{</p>
+		  <p>public static void main(String[] args){</p>
+		  <p>String sentence = "abcdefgh";</p>
+		  <p>System.out.println(sentence.length());</p>
+		  <p>sentence = sentence + "ijklmnopqrstuvwxyz";</p>
+		  <p>System.out.println(sentence);</p>
+		  <p>System.out.println(sentence.toUpperCase());</p>
+		  <p>if (sentence.equals("abcdefjhijklmnopqrstuvwxyz"){</p>
+		  <p>System.out.println("The Alphabet is: " + sentence)</p>
+		  <p>}</p>
+		  <p>}</p>
+		  <p>}</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		<p>#include &lt;iostream&gt;</p>
+		  <p>#include &lt;string&gt;</p>
+		  <p><br>using namespace std;</p>
+		  <p>int main(){</p>
+		  <p>string sentence = "abcdefgh";</p>
+		  <p>System.out.println(sentence.length());</p>
+		  <p>sentence = sentence + "ijklmnopqrstuvwxyz";</p>
+		  <p>cout << sentence << endl;</p>
+		  <p><br>for (int i = 0; i < sentence.length(); i++){</p>
+		  <p>sentence.at(i) = toupper(sentence.at(i));</p>
+		  <p>}</p>
+		  <p>cout << sentence << endl;</p>
+		  <p>if (sentence.equals("abcdefjhijklmnopqrstuvwxyz"){</p>
+		  <p>cout << "The Alphabet is: " + sentence << endl;</p>
+		  <p>}</p>
+		  <p>return 0;</p>
+		  <p>}</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		  <p>sentence = "abcdefgh";</p>
+		  <p>print(len(sentence));</p>
+		  <p>sentence = sentence + "ijklmnopqrstuvwxyz";</p>
+		  <p>print(sentence);</p>
+		  <p>print(sentence.upper());</p>
+		  <p>if "abcdefjhijklmnopqrstuvwxyz" in sentence</p>
+		  <p>print("The Alphabet is: " + sentence)</p>
 		</div>
 	</div>
 <script>

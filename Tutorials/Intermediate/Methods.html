@@ -56,13 +56,9 @@
 	<h1>Methods</h1>
 	<a class="BackwardArrow" href="../Beginner/Loops.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="Arrays.html">Foward &#9658</a>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero. Cras commodo nisl vel
-            dolor ullamcorper consectetur. Morbi porttitor, massa at malesuada sollicitudin, arcu erat efficitur nunc,
-            sit amet tempor orci metus at urna. Etiam efficitur dui ac neque semper tincidunt. Donec euismod facilisis
-            gravida. Donec posuere fringilla est, vestibulum dictum velit hendrerit pretium. Sed orci arcu, consequat
-            eget magna eu, dignissim lobortis augue. Aenean et sollicitudin quam. Nulla dapibus, urna a condimentum
-            placerat, lorem ipsum euismod elit, non tincidunt est felis eu neque.</p>
-		<img class="FirstImg" src="../../Images/Image 1.jpg" alt="AL"/>
+	<p>Methods is used to be called to run specific code defined by the programmer and that they can allow data to be passed through into the method. It can also pass back data to the original call of the method.</p>
+		<p>To create a method you'll need to specify the type of data being returned back or specify void if nothing will be returned back, then the name of the method and finally two curly brackets either empty
+			if no data is being passed through or the data type and name of variable being passed through.</p>
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
 		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
@@ -70,17 +66,55 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		  <p>public class Main{</p>
+		  <p>public static void main(String[] args){</p>
+		  <p>int number = 10;</p>
+		  <p>bool numberBiggerThanNine = validateNumber(number);</p>
+		  <p><br>if (numberBiggerThanNine){</p>
+		  <p>System.out.println("Number is bigger than nine.");</p>
+		  <p>}</p>
+		  <p>}</p>
+		  <p><br>bool validateNumber(int number){</p>
+		  <p>if(number > 9){</p>
+		  <p>return true;</p>
+		  <p>} else {</p>
+		  <p>return false;</p>
+		  <p>}</p>
+		  <p>}</p>
+		  <p>}</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		  <p>#include &lt;iostream&gt;</p>
+		  <p>using namespace std;</p>
+		  <p>int main(){</p>
+		  <p>int number = 10;</p>
+		  <p>boolean numberBiggerThanNine = validateNumber(number);</p>
+		  <p><br>if (numberBiggerThanNine){</p>
+		  <p>cout << "Number is bigger than nine. << endl;</p>
+		  <p>}</p>
+		  <p>return 0;</p>
+		  <p>}</p>
+		  <p><br>boolean validateNumber(int number){</p>
+		  <p>if(number > 9){</p>
+		  <p>return true;</p>
+		  <p>} else {</p>
+		  <p>return false;</p>
+		  <p>}</p>
+		  <p>}</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		  <p>int number = 10;</p>
+		  <p>bool numberBiggerThanNine = validateNumber(number);</p>
+		  <p><br>if (numberBiggerThanNine){</p>
+		  <p>print("Number is bigger than nine.");</p>
+		  <p>}</p>
+		  <p><br>bool validateNumber(int number){</p>
+		  <p>if(number > 9){</p>
+		  <p>return true;</p>
+		  <p>} else {</p>
+		  <p>return false;</p>
+		  <p>}</p>
+		  <p>}</p>
 		</div>
 	</div>
 	<script>

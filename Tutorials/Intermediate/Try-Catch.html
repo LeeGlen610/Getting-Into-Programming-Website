@@ -56,13 +56,8 @@
 	<h1>Try/Catch</h1>
 	<a class="BackwardArrow" href="String Manipulation.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="../Advanced/OOP - Beginning.html">Foward &#9658</a>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero. Cras commodo nisl vel
-            dolor ullamcorper consectetur. Morbi porttitor, massa at malesuada sollicitudin, arcu erat efficitur nunc,
-            sit amet tempor orci metus at urna. Etiam efficitur dui ac neque semper tincidunt. Donec euismod facilisis
-            gravida. Donec posuere fringilla est, vestibulum dictum velit hendrerit pretium. Sed orci arcu, consequat
-            eget magna eu, dignissim lobortis augue. Aenean et sollicitudin quam. Nulla dapibus, urna a condimentum
-            placerat, lorem ipsum euismod elit, non tincidunt est felis eu neque.</p>
-		<img class="FirstImg" src="../../Images/Image 1.jpg" alt="AL"/>
+	<p>Try/Catches are used to try a section of code and if an exception occurs then it will catch that exception and then in the catch it be handled properly
+		for example sending a message saying an error has occurred to the user.</p>
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
 		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
@@ -70,17 +65,38 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		  <p>public class main{</p>
+		  <p>public static void main(String[] args){</p>
+		  <p>int number;</p>
+		  <p>try{</p>
+		  <p>number = "Hello World!"</p>
+		  <p>} catch(Exception e) {</p>
+		  <p>System.out.println("An Error Has Occurred!");</p>
+		  <p>System.out.println(e);</p>
+		  <p>}</p>
+		  <p>}</p>
+		  <p>}</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		<p>#include &lt;iostream&gt;</p>
+		  <p>#include &lt;string&gt;</p>
+		  <p>int main(){</p>
+		  <p>int number;</p>
+		  <p>try{</p>
+		  <p>number = "Hello World!";</p>
+		  <p>}catch(int e){</p>
+		  <p>cout << "An Error Has Occurred!" << endl;</p>
+		  <p>cout << "Error Code: " + e + << endl;</p>
+		  <p>}</p>
+		  <p>return 0;</p>
+		  <p>}</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		  <p>int number</p>
+		  <p>try:</p>
+		  <p>number = "Hello World!"</p>
+		  <p>except:</p>
+		  <p>print("Error Has Occurred!")</p>
 		</div>
 	</div>
 	<script>

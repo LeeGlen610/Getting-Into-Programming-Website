@@ -56,13 +56,9 @@
 	<h1>Arrays</h1>
 	<a class="BackwardArrow" href="Methods.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="String Manipulation.html">Foward &#9658</a>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero. Cras commodo nisl vel
-            dolor ullamcorper consectetur. Morbi porttitor, massa at malesuada sollicitudin, arcu erat efficitur nunc,
-            sit amet tempor orci metus at urna. Etiam efficitur dui ac neque semper tincidunt. Donec euismod facilisis
-            gravida. Donec posuere fringilla est, vestibulum dictum velit hendrerit pretium. Sed orci arcu, consequat
-            eget magna eu, dignissim lobortis augue. Aenean et sollicitudin quam. Nulla dapibus, urna a condimentum
-            placerat, lorem ipsum euismod elit, non tincidunt est felis eu neque.</p>
-		<img class="FirstImg" src="../../Images/Image 1.jpg" alt="AL"/>
+	<p>An array is used to hold multiple data of a specific type. There is two forms of an array - static and dynamic.
+	The static version of an array is when you specify how much will be stored in that array but with a dynamic array
+	you can just add on a infinite amount of data to that array.</p>
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
 		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
@@ -70,23 +66,49 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
-		  <p>public class HelloWorld{</p>
-		  <p>public static void main(String[] args){</p>
-		  <p>System.out.println("Hello World");</p>
+		  <p>public class Main{</p>
+		  <p>public static void Main(String[] args){</p>
+		  <p>int[] tenNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</p>
+		  <p><br>for (int i = 0; i < tenNumbers.length; i++){</p>
+		  <p>System.out.println(tenNumbers[i]);</p>
 		  <p>}</p>
-		<p>}</p>
-		 <p>
-		 <hr />
-		<video class="TutorialVideos" src="../../Videos/Hello World.mp4" controls></video>
-		</p>
+		  <p><br>ArrayList&lt;Integer&gt; moreNumbers = new ArrayList&lt;Integer&gt;();</p>
+		  <p>moreNumbers.add(2);</p>
+		  <p>moreNumbers.add(120);</p>
+		  <p><br>for(int number : moreNumbers){</p>
+		  <p>System.out.println(number);</p>
+		  <p>}</p>
+		  <p>}</p>
+		  <p>}</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		<p>#include &lt;iostream&gt;</p>
+		  <p>#include &lt;vector&gt;</p>
+		  <p>using namespace std;</p>
+		  <p><br>int main(){</p>
+		  <p>int[] tenNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</p>
+		  <p><br>for (int i = 0; i < tenNumbers.length; i++){</p>
+		  <p>cout << tenNumbers[i] << endl;</p>
+		  <p>}</p>
+		  <p>Vector&lt;int&gt; moreNumbers;</p>
+		  <p>moreNumbers.push_back(10);</p>
+		  <p>moreNumbers.push_back(120);</p>
+		  <p>for (int number : moreNumbers){</p>
+		  <p>cout << number << endl;</p>
+		  <p>}</p>
+		  <p>return 0;</p>
+		  <p>}</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
+		  <p>import array as anArray</p>
+		  <p>tenNumbers = anArray.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);</p>
+		  <p><br>for (int i = 0; i < tenNumbers.length; i++){</p>
+		  <p>print(tenNumbers[i])</p>
+		  <p>}</p>
+		  <p>tenNumbers = anArray.append(11);</p>
+		  <p>tenNumbers = anArray.extend([12, 13, 14, 15])</p>
+		  <p>for number in tenNumbers:</p>
+		  <p>print(number)</p>
 		</div>
 	</div>
 	<script>
