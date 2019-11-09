@@ -56,13 +56,11 @@
 	<h1>Classes</h1>
 	<a class="BackwardArrow" href="OOP - Beginning.html">&#9668 Backward</a>
 	<a class="FowardArrow" href="Encapsulation & Constructors.html">Foward &#9658</a>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero. Cras commodo nisl vel
-            dolor ullamcorper consectetur. Morbi porttitor, massa at malesuada sollicitudin, arcu erat efficitur nunc,
-            sit amet tempor orci metus at urna. Etiam efficitur dui ac neque semper tincidunt. Donec euismod facilisis
-            gravida. Donec posuere fringilla est, vestibulum dictum velit hendrerit pretium. Sed orci arcu, consequat
-            eget magna eu, dignissim lobortis augue. Aenean et sollicitudin quam. Nulla dapibus, urna a condimentum
-            placerat, lorem ipsum euismod elit, non tincidunt est felis eu neque.</p>
-		<img class="FirstImg" src="../../Images/Image 1.jpg" alt="AL"/>
+
+		<p>Classes are blueprints for objects. What this means is that every object will have all the
+		attributes and methods declared in a class which then can be used.</p>
+		<img class="TutorialImg" src="../../Images/Class%20Diagram.png" alt="Class Diagram"/>
+		<p>There is four classes in the diagram - Animal, Bird, Dog & Cat. We will take these classes in the diagram and implement them into code.</p>
 		<div class="CodeTabs">
 		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
 		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
@@ -70,20 +68,74 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
-		  <p>public class HelloWorld{</p>
-		  <p>public static void main(String[] args){</p>
-		  <p>System.out.println("Hello World");</p>
+		  <h1>Animal Class</h1>
+		  <p>public class Animal{</p>
+		  <p><br>String name;</p>
+		  <p>int age;</p>
+		  <p>double height;</p>
+		  <p>String type;</p>
+		  <p><br>String getName(){</p>
+		  <p>return name;</p>
 		  <p>}</p>
-		<p>}</p>
-		 <p>
-		 <hr />
-		<video class="TutorialVideos" src="../../Videos/Hello World.mp4" controls></video>
-		</p>
+		  <p><br>void setName(String name){</p>
+		  <p>this.name = name;</p>
+		  <p>}</p>
+		  <p><br>int getAge(){</p>
+		  <p>return age;</p>
+		  <p>}</p>
+		  <p><br>void setAge(int age){</p>
+		  <p>this.age = age;</p>
+		  <p>}</p>
+		  <p><br>double getHeight(){</p>
+		  <p>return height;</p>
+		  <p>}</p>
+		  <p><br>void setHeight(double height){</p>
+		  <p>this.height = height;</p>
+		  <p>}</p>
+		  <p><br>String getType(){</p>
+		  <p>return type;</p>
+		  <p>}</p>
+		  <p><br>void setType(String type){</p>
+		  <p>this.type = type;</p>
+		  <p>}</p>
+		  <p><br>void speak(){</p>
+		  <p>System.out.println("Hello!");</p>
+		  <p>}</p>
+		  <p>}</p>
+		  <h1>Bird Class</h1>
+		  <p>public class Bird{</p>
+		  <p><br>boolean canFly;</p>
+		  <p><br>boolean canFly(){</p>
+		  <p>return canFly;</p>
+		  <p>}</p>
+		  <p><br>void setCanFly(){</p>
+		  <p>canFly = !canFly;</p>
+		  <p>}</p>
+		  <p><br>void speak(){</p>
+		  <p>System.out.println("Tweet!");</p>
+		  <p>}</p>
+		  <h1>Dog Class</h1>
+		  <p>public class Dog{</p>
+		  <p><br>void sniff(){</p>
+		  <p>System.out.println("Sniff Sniff!");</p>
+		  <p>}</p>
+		  <p><br>void speak(){</p>
+		  <p>System.out.println("Bark!");</p>
+		  <p>}</p>
+		  <p>}</p>
+		  <h1>Cat Class</h1>
+		  <p>public class Cat{</p>
+		  <p><br>void claws(){</p>
+		  <p>System.out.println("Hiss! The cat has now scratched you!");</p>
+		  <p>}</p>
+		  <p><br>void speak(){</p>
+		  <p>System.out.println("Meow!");</p>
+		  <p>}</p>
+		  <p>}</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
