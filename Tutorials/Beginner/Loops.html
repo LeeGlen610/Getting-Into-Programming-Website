@@ -1,14 +1,17 @@
 <!doctype html>
 <html>
 <head>
+    <!--Links to the css files in CSS folder.-->
     <link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
     <link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
     <link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
+    <!--Title of the page.-->
     <title>Loops</title>
 </head>
 
 <body>
+<!--Creates the heading area of the website with the menu and the search bar/button.-->
 <div id="TitleArea">
     <img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
     <span class="WebsiteTitle">Getting Into Programming</span>
@@ -21,6 +24,7 @@
 
 </div>
 <div class="VerticalMenu">
+    <!--Creates the vertical menu for the tutorial pages and links them to pages in each category.-->
     <button class="DropdownBtn">Getting Started &#9660</button>
     <div class="DropdownContainer">
         <a href="../Getting Started/Introduction.html">Introduction</a>
@@ -53,8 +57,10 @@
         <a href="../Advanced/Abstraction.html">Abstraction</a>
     </div>
 </div>
+<!--Main body of the page.-->
 <div id="MainBody">
     <h1>Loops</h1>
+    <!--Creates the forward and backward arrows and links them to the correct webpages-->
     <a class="BackwardArrow" href="If Statements.html">&#9668 Backward</a>
     <a class="FowardArrow" href="../Intermediate/Methods.html">Foward &#9658</a>
     <p>What a loop will do is for either a set period of time or when a condition is met will repeat specified code over
@@ -66,12 +72,13 @@
         <li>Do While loop</li>
     </ul>
     </p>
+    <!--The Tabs of the webpage for the different programming languages code.-->
     <div class="CodeTabs">
         <button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
         <button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
         <button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
     </div>
-
+    <!--The actual code itself for Java, C++ and Python.-->
     <div id="Java" class="ContentOfTheTab">
         <p>
             public class Main(){
@@ -93,6 +100,7 @@
         <p>}</p>
 
         <hr />
+        <!--Video of Java running.-->
         <video class="TutorialVideos" src="../../Videos/Java/Java%20Loops.mp4" controls></video>
     </div>
     <div id="C++" class="ContentOfTheTab">
@@ -119,6 +127,7 @@
         <p>return 0;</p>
         <p>}</p>
         <hr />
+        <!--Video of C++ running.-->
         <video class="TutorialVideos" src="../../Videos/C++/C++%20Loops.mp4" controls></video>
     </div>
     <div id="Python" class="ContentOfTheTab">
@@ -136,10 +145,13 @@
         <p>  if (number == 1):</p>
         <p>   break</p>
         <hr />
+        <!--Video of Python running.-->
         <video class="TutorialVideos" src="../../Videos/Python/Python%20Loops.mp4" controls></video>
     </div>
 </div>
+<!--The Javascript for the vertical menu and the tabs.-->
 <script>
+    //Javascript For The Vertical Menu
     var dropdownMenu = document.getElementsByClassName("DropdownBtn");
     var i;
     for (i = 0; i < dropdownMenu.length; i++) {
@@ -155,6 +167,7 @@
     }
 </script>
 <script>
+    //Javascript for the tabs.
     function enterCode(event, programmingLanguage) {
         var content, links;
 

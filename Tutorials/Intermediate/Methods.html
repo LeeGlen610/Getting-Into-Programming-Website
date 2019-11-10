@@ -1,160 +1,178 @@
 <!doctype html>
 <html>
 <head>
-<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<title>Methods</title>
+    <!--Links to the css files in CSS folder.-->
+    <link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+	<!--Title of the page.-->
+	<title>Methods</title>
 </head>
 
 <body>
-	<div id="TitleArea">
-	<img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
-	<span class="WebsiteTitle">Getting Into Programming</span>
-	<input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
-		<input type="submit" onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');" class="SearchButton"/>
-	<p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a href="../../contact.html">Contact</a></p>	
-	<hr />
-		
-		
-	</div>
-	<div class="VerticalMenu">
-<button class="DropdownBtn">Getting Started &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Getting Started/Introduction.html">Introduction</a>
-	<a href="../Getting Started/Before Starting.html">Before Starting</a>
-	<a href="../Getting Started/Setting up an IDE.html">Setting up an IDE</a>
-	<a href="../Getting Started/Hello World.html">Hello World</a>
-	</div>
-	<button class="DropdownBtn">Beginner &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Beginner/Data Types.html">Data Types</a>
-	<a href="../Beginner/Calculations.html">Calculations</a>
-	<a href="../Beginner/If Statements.html">IF Statements</a>
-	<a href="../Beginner/Loops.html">Loops</a>
-	</div>
-	<button class="DropdownBtn">Intermediate &#9660</button>
-	<div class="DropdownContainer">
-	<a href="Methods.html">Methods</a>
-	<a href="Arrays.html">Arrays</a>
-	<a href="String Manipulation.html">String Manipulation</a>
-	<a href="Try-Catch.html">Try/Catch</a>
-	</div>
-	<button class="DropdownBtn">Advanced &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
-	<a href="../Advanced/Classes.html">Classes</a>
-	<a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
-	<a href="../Advanced/Instantation.html">Instantation</a>
-	<a href="../Advanced/Inheritance.html">Inheritance</a>
-	<a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
-	<a href="../Advanced/Abstraction.html">Abstraction</a>
-	</div>
-	</div>
-	<div id="MainBody">
-	<h1>Methods</h1>
+<!--Creates the heading area of the website with the menu and the search bar/button.-->
+<div id="TitleArea">
+    <img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
+    <span class="WebsiteTitle">Getting Into Programming</span>
+    <input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
+    <input type="submit"
+           onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');"
+           class="SearchButton"/>
+    <p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a
+            href="../../contact.html">Contact</a></p>
+    <hr/>
+
+
+</div>
+<!--Creates the vertical menu for the tutorial pages and links them to pages in each category.-->
+<div class="VerticalMenu">
+    <button class="DropdownBtn">Getting Started &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Getting Started/Introduction.html">Introduction</a>
+        <a href="../Getting Started/Before Starting.html">Before Starting</a>
+        <a href="../Getting Started/Setting up an IDE.html">Setting up an IDE</a>
+        <a href="../Getting Started/Hello World.html">Hello World</a>
+    </div>
+    <button class="DropdownBtn">Beginner &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Beginner/Data Types.html">Data Types</a>
+        <a href="../Beginner/Calculations.html">Calculations</a>
+        <a href="../Beginner/If Statements.html">IF Statements</a>
+        <a href="../Beginner/Loops.html">Loops</a>
+    </div>
+    <button class="DropdownBtn">Intermediate &#9660</button>
+    <div class="DropdownContainer">
+        <a href="Methods.html">Methods</a>
+        <a href="Arrays.html">Arrays</a>
+        <a href="String Manipulation.html">String Manipulation</a>
+        <a href="Try-Catch.html">Try/Catch</a>
+    </div>
+    <button class="DropdownBtn">Advanced &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
+        <a href="../Advanced/Classes.html">Classes</a>
+        <a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
+        <a href="../Advanced/Instantation.html">Instantation</a>
+        <a href="../Advanced/Inheritance.html">Inheritance</a>
+        <a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
+        <a href="../Advanced/Abstraction.html">Abstraction</a>
+    </div>
+</div>
+<!--Main body of the page.-->
+<div id="MainBody">
+    <h1>Methods</h1>
+	<!--Creates the forward and backward arrows and links them to the correct webpages-->
 	<a class="BackwardArrow" href="../Beginner/Loops.html">&#9668 Backward</a>
-	<a class="FowardArrow" href="Arrays.html">Foward &#9658</a>
-	<p>Methods is used to be called to run specific code defined by the programmer and that they can allow data to be passed through into the method. It can also pass back data to the original call of the method.</p>
-		<p>To create a method you'll need to specify the type of data being returned back or specify void if nothing will be returned back, then the name of the method and finally two curly brackets either empty
-			if no data is being passed through or the data type and name of variable being passed through.</p>
-		<div class="CodeTabs">
-		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
-		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
-		<button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
-		</div>
-		
-	  <div id="Java" class="ContentOfTheTab">
-		  <p>public class Main{</p>
-		  <p>public static void main(String[] args){</p>
-		  <p>int number = 10;</p>
-		  <p>Main main = new Main(); //Used to call the method in the Main class</p>
-		  <p>boolean numberBiggerThanNine = validateNumber(number);</p>
-		  <p><br>if (numberBiggerThanNine){</p>
-		  <p>System.out.println("Number is bigger than nine.");</p>
-		  <p>}</p>
-		  <p>}</p>
-		  <p><br>boolean validateNumber(int number){</p>
-		  <p>if(number > 9){</p>
-		  <p>return true;</p>
-		  <p>} else {</p>
-		  <p>return false;</p>
-		  <p>}</p>
-		  <p>}</p>
-		  <p>}</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/Java/Java%20Methods.mp4" controls></video>
-		</div>
-	  <div id="C++" class="ContentOfTheTab">
-		  <p>#include &lt;iostream&gt;</p>
-		  <p>using namespace std;</p>
-		  <p><br>bool validateNumber(int);</p>
-		  <p>int main(){</p>
-		  <p>int number = 10;</p>
-		  <p>bool numberBiggerThanNine = validateNumber(number);</p>
-		  <p><br>if (numberBiggerThanNine){</p>
-		  <p>cout << "Number is bigger than nine." << endl;</p>
-		  <p>}</p>
-		  <p>return 0;</p>
-		  <p>}</p>
-		  <p><br>bool validateNumber(int number){</p>
-		  <p>if(number > 9){</p>
-		  <p>return true;</p>
-		  <p>} else {</p>
-		  <p>return false;</p>
-		  <p>}</p>
-		  <p>}</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/C++/C++%20Methods.mp4" controls></video>
-		</div>
-	  <div id="Python" class="ContentOfTheTab">
-		  <p>def validateNumber(number):</p>
-		  <p> if(number > 9):</p>
-		  <p>  return True</p>
-		  <p> else:</p>
-		  <p>  return False;</p>
-		  <p><br>number = 10</p>
-		  <p>numberBiggerThanNine = validateNumber(number)</p>
-		  <p><br>if (numberBiggerThanNine):</p>
-		  <p> print("Number is bigger than nine.")</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/Python/Python%20Methods.mp4" controls></video>
-		</div>
-	</div>
-	<script>
+    <a class="FowardArrow" href="Arrays.html">Foward &#9658</a>
+    <p>Methods is used to be called to run specific code defined by the programmer and that they can allow data to be
+        passed through into the method. It can also pass back data to the original call of the method.</p>
+    <p>To create a method you'll need to specify the type of data being returned back or specify void if nothing will be
+        returned back, then the name of the method and finally two curly brackets either empty
+        if no data is being passed through or the data type and name of variable being passed through.</p>
+	<!--The Tabs of the webpage for the different programming languages code.-->
+	<div class="CodeTabs">
+        <button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
+        <button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
+        <button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
+    </div>
+	<!--The actual code itself for Java, C++ and Python.-->
+    <div id="Java" class="ContentOfTheTab">
+        <p>public class Main{</p>
+        <p>public static void main(String[] args){</p>
+        <p>int number = 10;</p>
+        <p>Main main = new Main(); //Used to call the method in the Main class</p>
+        <p>boolean numberBiggerThanNine = validateNumber(number);</p>
+        <p><br>if (numberBiggerThanNine){</p>
+        <p>System.out.println("Number is bigger than nine.");</p>
+        <p>}</p>
+        <p>}</p>
+        <p><br>boolean validateNumber(int number){</p>
+        <p>if(number > 9){</p>
+        <p>return true;</p>
+        <p>} else {</p>
+        <p>return false;</p>
+        <p>}</p>
+        <p>}</p>
+        <p>}</p>
+        <hr/>
+        <!--Video of Java running.-->
+        <video class="TutorialVideos" src="../../Videos/Java/Java%20Methods.mp4" controls></video>
+    </div>
+    <div id="C++" class="ContentOfTheTab">
+        <p>#include &lt;iostream&gt;</p>
+        <p>using namespace std;</p>
+        <p><br>bool validateNumber(int);</p>
+        <p>int main(){</p>
+        <p>int number = 10;</p>
+        <p>bool numberBiggerThanNine = validateNumber(number);</p>
+        <p><br>if (numberBiggerThanNine){</p>
+        <p>cout << "Number is bigger than nine." << endl;</p>
+        <p>}</p>
+        <p>return 0;</p>
+        <p>}</p>
+        <p><br>bool validateNumber(int number){</p>
+        <p>if(number > 9){</p>
+        <p>return true;</p>
+        <p>} else {</p>
+        <p>return false;</p>
+        <p>}</p>
+        <p>}</p>
+        <hr/>
+        <!--Video of C++ running.-->
+        <video class="TutorialVideos" src="../../Videos/C++/C++%20Methods.mp4" controls></video>
+    </div>
+    <div id="Python" class="ContentOfTheTab">
+        <p>def validateNumber(number):</p>
+        <p> if(number > 9):</p>
+        <p> return True</p>
+        <p> else:</p>
+        <p> return False;</p>
+        <p><br>number = 10</p>
+        <p>numberBiggerThanNine = validateNumber(number)</p>
+        <p><br>if (numberBiggerThanNine):</p>
+        <p> print("Number is bigger than nine.")</p>
+        <hr/>
+        <!--Video of Python running.-->
+        <video class="TutorialVideos" src="../../Videos/Python/Python%20Methods.mp4" controls></video>
+    </div>
+</div>
+<!--The Javascript for the vertical menu and the tabs.-->
+<script>
+	//Javascript For The Vertical Menu
 	var dropdownMenu = document.getElementsByClassName("DropdownBtn");
-	var i;
-	for (i = 0; i < dropdownMenu.length; i++) {
-		dropdownMenu[i].addEventListener("click", function () {
-			this.classList.toggle("active");
-			var dropdownContent = this.nextElementSibling;
-			if (dropdownContent.style.display === "block") {
-				dropdownContent.style.display = "none";
-			} else {
-				dropdownContent.style.display = "block";
-			}
-		})
-	}
+    var i;
+    for (i = 0; i < dropdownMenu.length; i++) {
+        dropdownMenu[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        })
+    }
 </script>
 <script>
+	//Javascript for the tabs.
 	function enterCode(event, programmingLanguage) {
-		var content, links;
+        var content, links;
 
-		content = document.getElementsByClassName("ContentOfTheTab");
-		for (var i = 0; i < content.length; i++) {
-			content[i].style.display = "none";
-		}
+        content = document.getElementsByClassName("ContentOfTheTab");
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
 
-		links = document.getElementsByClassName("CodeLink");
-		for (var i = 0; i < content.length; i++) {
-			links[i].className = links[i].className.replace(" active", "");
-		}
+        links = document.getElementsByClassName("CodeLink");
+        for (var i = 0; i < content.length; i++) {
+            links[i].className = links[i].className.replace(" active", "");
+        }
 
-		document.getElementById(programmingLanguage).style.display = "block";
-		event.currentTarget.className += " active";
-		document.getElementById("DefaultLanguage").click;
-	}
+        document.getElementById(programmingLanguage).style.display = "block";
+        event.currentTarget.className += " active";
+        document.getElementById("DefaultLanguage").click;
+    }
 </script>
 </body>
 </html>

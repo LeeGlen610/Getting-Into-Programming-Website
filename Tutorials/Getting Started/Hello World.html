@@ -1,128 +1,145 @@
 <!doctype html>
 <html>
 <head>
-<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<title>Hello World</title>
+	<!--Links to the css files in CSS folder.-->
+	<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+	<!--Title of the page.-->
+	<title>Hello World</title>
 </head>
 
 <body>
-	<div id="TitleArea">
-	<img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
-	<span class="WebsiteTitle">Getting Into Programming</span>
-	<input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
-		<input type="submit" onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');" class="SearchButton"/>
-	<p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a href="../../contact.html">Contact</a></p>	
-	<hr />
-		
-		
-	</div>
-	<div class="VerticalMenu">
-	<button class="DropdownBtn">Getting Started &#9660</button>
-	<div class="DropdownContainer">
-	<a href="Introduction.html">Introduction</a>
-	<a href="Before Starting.html">Before Starting</a>
-	<a href="Setting up an IDE.html">Setting up an IDE</a>
-	<a href="Hello World.html">Hello World</a>
-	</div>
-		<button class="DropdownBtn">Beginner &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Beginner/Data Types.html">Data Types</a>
-	<a href="../Beginner/Calculations.html">Calculations</a>
-	<a href="../Beginner/If Statements.html">IF Statements</a>
-	<a href="../Beginner/Loops.html">Loops</a>
-	</div>
-	<button class="DropdownBtn">Intermediate &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Intermediate/Methods.html">Methods</a>
-	<a href="../Intermediate/Arrays.html">Arrays</a>
-	<a href="../Intermediate/String Manipulation.html">String Manipulation</a>
-	<a href="../Intermediate/Try-Catch.html">Try/Catch</a>
-	</div>
-	<button class="DropdownBtn">Advanced &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
-	<a href="../Advanced/Classes.html">Classes</a>
-	<a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
-	<a href="../Advanced/Instantation.html">Instantation</a>
-	<a href="../Advanced/Inheritance.html">Inheritance</a>
-	<a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
-	<a href="../Advanced/Abstraction.html">Abstraction</a>
-	</div>
-	</div>
-	<div id="MainBody">
-	<h1>Hello World</h1>
+<!--Creates the heading area of the website with the menu and the search bar/button.-->
+<div id="TitleArea">
+    <img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
+    <span class="WebsiteTitle">Getting Into Programming</span>
+    <input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
+    <input type="submit"
+           onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');"
+           class="SearchButton"/>
+    <p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a
+            href="../../contact.html">Contact</a></p>
+    <hr/>
+
+
+</div>
+<!--Creates the vertical menu for the tutorial pages and links them to pages in each category.-->
+<div class="VerticalMenu">
+    <button class="DropdownBtn">Getting Started &#9660</button>
+    <div class="DropdownContainer">
+        <a href="Introduction.html">Introduction</a>
+        <a href="Before Starting.html">Before Starting</a>
+        <a href="Setting up an IDE.html">Setting up an IDE</a>
+        <a href="Hello World.html">Hello World</a>
+    </div>
+    <button class="DropdownBtn">Beginner &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Beginner/Data Types.html">Data Types</a>
+        <a href="../Beginner/Calculations.html">Calculations</a>
+        <a href="../Beginner/If Statements.html">IF Statements</a>
+        <a href="../Beginner/Loops.html">Loops</a>
+    </div>
+    <button class="DropdownBtn">Intermediate &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Intermediate/Methods.html">Methods</a>
+        <a href="../Intermediate/Arrays.html">Arrays</a>
+        <a href="../Intermediate/String Manipulation.html">String Manipulation</a>
+        <a href="../Intermediate/Try-Catch.html">Try/Catch</a>
+    </div>
+    <button class="DropdownBtn">Advanced &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
+        <a href="../Advanced/Classes.html">Classes</a>
+        <a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
+        <a href="../Advanced/Instantation.html">Instantation</a>
+        <a href="../Advanced/Inheritance.html">Inheritance</a>
+        <a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
+        <a href="../Advanced/Abstraction.html">Abstraction</a>
+    </div>
+</div>
+<!--Main body of the page.-->
+<div id="MainBody">
+    <h1>Hello World</h1>
+	<!--Creates the forward and backward arrows and links them to the correct webpages-->
 	<a class="BackwardArrow" href="Setting up an IDE.html">&#9668 Backward</a>
-	<a class="FowardArrow" href="../Beginner/Data Types.html">Foward &#9658</a>
-	<p>Hello World is usually the first program a programmer ever makes. What this simple program will do is that it will output to the console - Hello World</p>
-		<div class="CodeTabs">
-		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
-		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
-		<button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
-		</div>
-		
-	  <div id="Java" class="ContentOfTheTab">
-		  <p>public class HelloWorld{</p>
-		  <p>public static void main(String[] args){</p>
-		  <p>System.out.println("Hello World");</p>
-		  <p>}</p>
-		<p>}</p>
-		 <p>
-		 <hr />
-		<video class="TutorialVideos" src="../../Videos/Java/Java%20Hello%20World.mp4" controls></video>
-		</p>
-		</div>
-	  <div id="C++" class="ContentOfTheTab">
-          <p>#include &lt;iostream&gt;</p>
-		  <p>using namespace std;</p>
-		  <p>int main(){</p>
-		  <p>cout << "Hello World";</p>
-		  <p>return 0;</p>
-		  <p>}</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/C++/C++%20Hello%20World.mp4" controls></video>
-		</div>
-	  <div id="Python" class="ContentOfTheTab">
-		<p>print("Hello World")</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/Python/Python%20Hello%20World.mp4" controls></video>
-		</div>
-	</div>
-	<script>
+    <a class="FowardArrow" href="../Beginner/Data Types.html">Foward &#9658</a>
+    <p>Hello World is usually the first program a programmer ever makes. What this simple program will do is that it
+        will output to the console - Hello World</p>
+	<!--The Tabs of the webpage for the different programming languages code.-->
+	<div class="CodeTabs">
+        <button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
+        <button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
+        <button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
+    </div>
+	<!--The actual code itself for Java, C++ and Python.-->
+	<div id="Java" class="ContentOfTheTab">
+        <p>public class HelloWorld{</p>
+        <p>public static void main(String[] args){</p>
+        <p>System.out.println("Hello World");</p>
+        <p>}</p>
+        <p>}</p>
+        <p>
+        <hr/>
+        <!--Video of Java running.-->
+        <video class="TutorialVideos" src="../../Videos/Java/Java%20Hello%20World.mp4" controls></video>
+        </p>
+    </div>
+    <div id="C++" class="ContentOfTheTab">
+        <p>#include &lt;iostream&gt;</p>
+        <p>using namespace std;</p>
+        <p>int main(){</p>
+        <p>cout << "Hello World";</p>
+        <p>return 0;</p>
+        <p>}</p>
+        <hr/>
+        <!--Video of C++ running.-->
+        <video class="TutorialVideos" src="../../Videos/C++/C++%20Hello%20World.mp4" controls></video>
+    </div>
+    <div id="Python" class="ContentOfTheTab">
+        <p>print("Hello World")</p>
+        <hr/>
+        <!--Video of Python running.-->
+        <video class="TutorialVideos" src="../../Videos/Python/Python%20Hello%20World.mp4" controls></video>
+    </div>
+</div>
+<!--The Javascript for the vertical menu and the tabs.-->
+<script>
+	//Javascript For The Vertical Menu
 	var dropdownMenu = document.getElementsByClassName("DropdownBtn");
-	var i;
-	for (i = 0; i < dropdownMenu.length; i++) {
-		dropdownMenu[i].addEventListener("click", function () {
-			this.classList.toggle("active");
-			var dropdownContent = this.nextElementSibling;
-			if (dropdownContent.style.display === "block") {
-				dropdownContent.style.display = "none";
-			} else {
-				dropdownContent.style.display = "block";
-			}
-		})
-	}
+    var i;
+    for (i = 0; i < dropdownMenu.length; i++) {
+        dropdownMenu[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        })
+    }
 </script>
 <script>
+	//Javascript for the tabs.
 	function enterCode(event, programmingLanguage) {
-		var content, links;
+        var content, links;
 
-		content = document.getElementsByClassName("ContentOfTheTab");
-		for (var i = 0; i < content.length; i++) {
-			content[i].style.display = "none";
-		}
+        content = document.getElementsByClassName("ContentOfTheTab");
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
 
-		links = document.getElementsByClassName("CodeLink");
-		for (var i = 0; i < content.length; i++) {
-			links[i].className = links[i].className.replace(" active", "");
-		}
+        links = document.getElementsByClassName("CodeLink");
+        for (var i = 0; i < content.length; i++) {
+            links[i].className = links[i].className.replace(" active", "");
+        }
 
-		document.getElementById(programmingLanguage).style.display = "block";
-		event.currentTarget.className += " active";
-		document.getElementById("DefaultLanguage").click;
-	}
+        document.getElementById(programmingLanguage).style.display = "block";
+        event.currentTarget.className += " active";
+        document.getElementById("DefaultLanguage").click;
+    }
 </script>
 </body>
 </html>

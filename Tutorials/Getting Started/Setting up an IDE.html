@@ -1,177 +1,225 @@
 <!doctype html>
 <html>
 <head>
-<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<title>Setting Up An IDE</title>
+	<!--Links to the css files in CSS folder.-->
+	<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+	<!--Title of the page.-->
+	<title>Setting Up An IDE</title>
 </head>
 
 <body>
-	<div id="TitleArea">
-	<img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
-	<span class="WebsiteTitle">Getting Into Programming</span>
-	<input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
-		<input type="submit" onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');" class="SearchButton"/>
-	<p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a href="../../contact.html">Contact</a></p>	
-	<hr />
-		
-		
-	</div>
-	<div class="VerticalMenu">
-	<button class="DropdownBtn">Getting Started &#9660</button>
-	<div class="DropdownContainer">
-	<a href="Introduction.html">Introduction</a>
-	<a href="Before Starting.html">Before Starting</a>
-	<a href="Setting up an IDE.html">Setting up an IDE</a>
-	<a href="Hello World.html">Hello World</a>
-	</div>
-		<button class="DropdownBtn">Beginner &#9660</button>
-		<div class="DropdownContainer">
-			<a href="../Beginner/Data Types.html">Data Types</a>
-			<a href="../Beginner/Calculations.html">Calculations</a>
-			<a href="../Beginner/If Statements.html">IF Statements</a>
-			<a href="../Beginner/Loops.html">Loops</a>
-		</div>
-		<button class="DropdownBtn">Intermediate &#9660</button>
-		<div class="DropdownContainer">
-			<a href="../Intermediate/Methods.html">Methods</a>
-			<a href="../Intermediate/Arrays.html">Arrays</a>
-			<a href="../Intermediate/String Manipulation.html">String Manipulation</a>
-			<a href="../Intermediate/Try-Catch.html">Try/Catch</a>
-		</div>
-		<button class="DropdownBtn">Advanced &#9660</button>
-		<div class="DropdownContainer">
-			<a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
-			<a href="../Advanced/Classes.html">Classes</a>
-			<a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
-			<a href="../Advanced/Instantation.html">Instantation</a>
-			<a href="../Advanced/Inheritance.html">Inheritance</a>
-			<a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
-			<a href="../Advanced/Abstraction.html">Abstraction</a>
-		</div>
-	</div>
-	<div id="MainBody">
-	<h1>Setting Up An IDE</h1>
+<!--Creates the heading area of the website with the menu and the search bar/button.-->
+<div id="TitleArea">
+    <img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
+    <span class="WebsiteTitle">Getting Into Programming</span>
+    <input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
+    <input type="submit"
+           onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');"
+           class="SearchButton"/>
+    <p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a
+            href="../../contact.html">Contact</a></p>
+    <hr/>
+
+
+</div>
+<!--Creates the vertical menu for the tutorial pages and links them to pages in each category.-->
+<div class="VerticalMenu">
+    <button class="DropdownBtn">Getting Started &#9660</button>
+    <div class="DropdownContainer">
+        <a href="Introduction.html">Introduction</a>
+        <a href="Before Starting.html">Before Starting</a>
+        <a href="Setting up an IDE.html">Setting up an IDE</a>
+        <a href="Hello World.html">Hello World</a>
+    </div>
+    <button class="DropdownBtn">Beginner &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Beginner/Data Types.html">Data Types</a>
+        <a href="../Beginner/Calculations.html">Calculations</a>
+        <a href="../Beginner/If Statements.html">IF Statements</a>
+        <a href="../Beginner/Loops.html">Loops</a>
+    </div>
+    <button class="DropdownBtn">Intermediate &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Intermediate/Methods.html">Methods</a>
+        <a href="../Intermediate/Arrays.html">Arrays</a>
+        <a href="../Intermediate/String Manipulation.html">String Manipulation</a>
+        <a href="../Intermediate/Try-Catch.html">Try/Catch</a>
+    </div>
+    <button class="DropdownBtn">Advanced &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
+        <a href="../Advanced/Classes.html">Classes</a>
+        <a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
+        <a href="../Advanced/Instantation.html">Instantation</a>
+        <a href="../Advanced/Inheritance.html">Inheritance</a>
+        <a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
+        <a href="../Advanced/Abstraction.html">Abstraction</a>
+    </div>
+</div>
+<!--Main body of the page.-->
+<div id="MainBody">
+    <h1>Setting Up An IDE</h1>
+	<!--Creates the forward and backward arrows and links them to the correct webpages-->
 	<a class="BackwardArrow" href="Before Starting.html">&#9668 Backward</a>
-	<a class="FowardArrow" href="Hello World.html">Foward &#9658</a>
-	<p>An IDE is where the environment you'll mainly be developing your programs in. Multiple languages will use different IDEs' to be developed on.</p>
-		<div class="CodeTabs">
-		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
-		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
-		<button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
-		</div>
-		
-	  <div id="Java" class="ContentOfTheTab">
-		<p>
-		There is two IDEs' I would recommend - InteliJ & Eclipse.
-		</p>
-		  <h1>InteliJ</h1>
+    <a class="FowardArrow" href="Hello World.html">Foward &#9658</a>
+    <p>An IDE is where the environment you'll mainly be developing your programs in. Multiple languages will use
+        different IDEs' to be developed on.</p>
+	<!--The Tabs of the webpage for the different programming languages code.-->
+	<div class="CodeTabs">
+        <button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
+        <button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
+        <button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
+    </div>
 
-		  <ol type="1">
-			  <li>Go to this website: <a href="https://www.jetbrains.com/idea/download/index.html#section=windows">InteliJ</a> and download the community edition. </li>
-			  <li>Click on the exe and let it install to the default location and tick .java for associations and 64-bit launcher when asked and then install</li>
-			  <li>Once you've installed the IDE start it and go through the first time start up and pick your UI and then default everything.</li>
-		  </ol>
+    <!--The actual instructions itself for Java, C++ and Python.-->
+    <div id="Java" class="ContentOfTheTab">
+        <p>
+            There is two IDEs' I would recommend - InteliJ & Eclipse.
+        </p>
+        <h1>InteliJ</h1>
 
-		  <p>That is you ready to use InteliJ.</p>
+        <ol type="1">
+            <li>Go to this website: <a
+                    href="https://www.jetbrains.com/idea/download/index.html#section=windows">InteliJ</a> and download
+                the community edition.
+            </li>
+            <li>Click on the exe and let it install to the default location and tick .java for associations and 64-bit
+                launcher when asked and then install
+            </li>
+            <li>Once you've installed the IDE start it and go through the first time start up and pick your UI and then
+                default everything.
+            </li>
+        </ol>
 
-		  <h1>Eclipse</h1>
+        <p>That is you ready to use InteliJ.</p>
 
-		  <ol type="1">
-			  <li>Go to this website: <a href="https://www.eclipse.org/downloads/">Eclipse</a> and click on the download button.</li>
-			  <li>Click on the exe and click on Eclipse for Java Developers and then click install. There will be a prompt that will pop-up, just click select all and then accept selected.</li>
-			  <li>Once you've installed the IDE start it and choose where you want to create your workspace to have a place to save all your programs and click launch.</li>
-		  </ol>
+        <h1>Eclipse</h1>
 
-		  <p>That is you ready to use Eclipse.</p>
+        <ol type="1">
+            <li>Go to this website: <a href="https://www.eclipse.org/downloads/">Eclipse</a> and click on the download
+                button.
+            </li>
+            <li>Click on the exe and click on Eclipse for Java Developers and then click install. There will be a prompt
+                that will pop-up, just click select all and then accept selected.
+            </li>
+            <li>Once you've installed the IDE start it and choose where you want to create your workspace to have a
+                place to save all your programs and click launch.
+            </li>
+        </ol>
 
-		  <h1>Creating A Project</h1>
+        <p>That is you ready to use Eclipse.</p>
 
-		  <p>From here on out I'm assuming that you are using InteliJ.</p>
+        <h1>Creating A Project</h1>
 
-		  <p>Click on new project and then click Java and then where it says project SDK click on ... and go to - C:\Program Files\Java and click on the JDK and press next and press next again and then save the project wherever you wish to save it and click finish.</p>
-		  <p>Open up the folder with the project name and then click on src, right-click, new and then click class. Name the class and then press enter.</p>
-		  <p>Once you've done coding click on the play button either next to the method or near the top of the IDE.</p>
-		</div>
-	  <div id="C++" class="ContentOfTheTab">
-		<p>
-			For C++ we will install Visual Studio.</p>
+        <p>From here on out I'm assuming that you are using InteliJ.</p>
 
-			<h1>Visual Studio</h1>
+        <p>Click on new project and then click Java and then where it says project SDK click on ... and go to -
+            C:\Program Files\Java and click on the JDK and press next and press next again and then save the project
+            wherever you wish to save it and click finish.</p>
+        <p>Open up the folder with the project name and then click on src, right-click, new and then click class. Name
+            the class and then press enter.</p>
+        <p>Once you've done coding click on the play button either next to the method or near the top of the IDE.</p>
+    </div>
+    <div id="C++" class="ContentOfTheTab">
+        <p>
+            For C++ we will install Visual Studio.</p>
 
-		  	<ol type="1">
-				<li>Go to this link: <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a> and click and download the community edition.</li>
-				<li>Click on the exe and then press continue and then once it has downloaded what it needed you'll need to choose these three workloads: <ul>
-					<li>.NET desktop development</li>
-					<li>Desktop Development with C++</li>
-					<li>Universal Windows Platform developer</li>
-				</ul> and then press install.</li>
-				<li>Once it's installed start it up and choose the UI and click Start Visual Studio.</li>
-			</ol>
+        <h1>Visual Studio</h1>
 
-		  <h1>Creating A Project</h1>
+        <ol type="1">
+            <li>Go to this link: <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a> and click and
+                download the community edition.
+            </li>
+            <li>Click on the exe and then press continue and then once it has downloaded what it needed you'll need to
+                choose these three workloads:
+                <ul>
+                    <li>.NET desktop development</li>
+                    <li>Desktop Development with C++</li>
+                    <li>Universal Windows Platform developer</li>
+                </ul>
+                and then press install.
+            </li>
+            <li>Once it's installed start it up and choose the UI and click Start Visual Studio.</li>
+        </ol>
 
-		  <p>Click on Create A New Project and then choose empty project and then name the project and specify the location of where the project will be saved to.</p>
-		  <p>Click on the Source Files folder and then right-click and go to add and then new item. Choose C++ file, name it and click add. Then double click on the file.</p>
-		  <p>Once you have coded what you needed to do click on the green plus</p>
-		</div>
-	  <div id="Python" class="ContentOfTheTab">
-		For Python we will be using PyCharm.
+        <h1>Creating A Project</h1>
 
-			<h1>PyCharm</h1>
+        <p>Click on Create A New Project and then choose empty project and then name the project and specify the
+            location of where the project will be saved to.</p>
+        <p>Click on the Source Files folder and then right-click and go to add and then new item. Choose C++ file, name
+            it and click add. Then double click on the file.</p>
+        <p>Once you have coded what you needed to do click on the green plus</p>
+    </div>
+    <div id="Python" class="ContentOfTheTab">
+        For Python we will be using PyCharm.
 
-		  <ol type="1">
-			  <li>Go to this website: <a href="https://www.jetbrains.com/pycharm/download/#section=windows">PyCharm</a> and download the community edition. </li>
-			  <li>Click on the exe and let it install to the default location and tick .py for associations and click 64-bit launcher when asked and then install</li>
-			  <li>Once you've installed the IDE start it and go through the first time start up and pick your UI and then default everything.</li>
-			  <li>Click on configuration and then settings. Then click on Project Interpreter and then click on the gear button and then add. It should pop up with it automatically showing python 3.8 and then press ok.
-			  Once it is done installing and updating the python press apply then ok.
-			  </li>
-		  </ol>
+        <h1>PyCharm</h1>
 
-		  <h1>Creating A New Project</h1>
+        <ol type="1">
+            <li>Go to this website: <a href="https://www.jetbrains.com/pycharm/download/#section=windows">PyCharm</a>
+                and download the community edition.
+            </li>
+            <li>Click on the exe and let it install to the default location and tick .py for associations and click
+                64-bit launcher when asked and then install
+            </li>
+            <li>Once you've installed the IDE start it and go through the first time start up and pick your UI and then
+                default everything.
+            </li>
+            <li>Click on configuration and then settings. Then click on Project Interpreter and then click on the gear
+                button and then add. It should pop up with it automatically showing python 3.8 and then press ok.
+                Once it is done installing and updating the python press apply then ok.
+            </li>
+        </ol>
 
-		  <p>Click on new project and then click pure python and choose where you're saving your project and click next </p>
-		  <p>Open up the folder with the project name, right-click, new and then click python file. Name the file and then press enter.</p>
-		  <p>Once you've done coding click on the file and then right-click and then click run.</p>
+        <h1>Creating A New Project</h1>
 
-		</div>
-	</div>
-	<script>
+        <p>Click on new project and then click pure python and choose where you're saving your project and click
+            next </p>
+        <p>Open up the folder with the project name, right-click, new and then click python file. Name the file and then
+            press enter.</p>
+        <p>Once you've done coding click on the file and then right-click and then click run.</p>
+
+    </div>
+</div>
+<!--The Javascript for the vertical menu and the tabs.-->
+<script>
+	//Javascript For The Vertical Menu
 	var dropdownMenu = document.getElementsByClassName("DropdownBtn");
-	var i;
-	for (i = 0; i < dropdownMenu.length; i++) {
-		dropdownMenu[i].addEventListener("click", function () {
-			this.classList.toggle("active");
-			var dropdownContent = this.nextElementSibling;
-			if (dropdownContent.style.display === "block") {
-				dropdownContent.style.display = "none";
-			} else {
-				dropdownContent.style.display = "block";
-			}
-		})
-	}
+    var i;
+    for (i = 0; i < dropdownMenu.length; i++) {
+        dropdownMenu[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        })
+    }
 </script>
 <script>
+	//Javascript for the tabs.
 	function enterCode(event, programmingLanguage) {
-		var content, links;
+        var content, links;
 
-		content = document.getElementsByClassName("ContentOfTheTab");
-		for (var i = 0; i < content.length; i++) {
-			content[i].style.display = "none";
-		}
+        content = document.getElementsByClassName("ContentOfTheTab");
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
 
-		links = document.getElementsByClassName("CodeLink");
-		for (var i = 0; i < content.length; i++) {
-			links[i].className = links[i].className.replace(" active", "");
-		}
+        links = document.getElementsByClassName("CodeLink");
+        for (var i = 0; i < content.length; i++) {
+            links[i].className = links[i].className.replace(" active", "");
+        }
 
-		document.getElementById(programmingLanguage).style.display = "block";
-		event.currentTarget.className += " active";
-		document.getElementById("DefaultLanguage").click;
-	}
+        document.getElementById(programmingLanguage).style.display = "block";
+        event.currentTarget.className += " active";
+        document.getElementById("DefaultLanguage").click;
+    }
 </script>
 </body>
 </html>

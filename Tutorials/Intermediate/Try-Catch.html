@@ -1,156 +1,173 @@
 <!doctype html>
 <html>
 <head>
-<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<title>Try/Catch</title>
+	<!--Links to the css files in CSS folder.-->
+	<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+	<!--Title of the page.-->
+	<title>Try/Catch</title>
 </head>
 
 <body>
-	<div id="TitleArea">
-	<img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
-	<span class="WebsiteTitle">Getting Into Programming</span>
-	<input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
-		<input type="submit" onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');" class="SearchButton"/>
-	<p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a href="../../contact.html">Contact</a></p>	
-	<hr />
-		
-		
-	</div>
-	<div class="VerticalMenu">
-<button class="DropdownBtn">Getting Started &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Getting Started/Introduction.html">Introduction</a>
-	<a href="../Getting Started/Before Starting.html">Before Starting</a>
-	<a href="../Getting Started/Setting up an IDE.html">Setting up an IDE</a>
-	<a href="../Getting Started/Hello World.html">Hello World</a>
-	</div>
-	<button class="DropdownBtn">Beginner &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Beginner/Data Types.html">Data Types</a>
-	<a href="../Beginner/Calculations.html">Calculations</a>
-	<a href="../Beginner/If Statements.html">IF Statements</a>
-	<a href="../Beginner/Loops.html">Loops</a>
-	</div>
-	<button class="DropdownBtn">Intermediate &#9660</button>
-	<div class="DropdownContainer">
-	<a href="Methods.html">Methods</a>
-	<a href="Arrays.html">Arrays</a>
-	<a href="String Manipulation.html">String Manipulation</a>
-	<a href="Try-Catch.html">Try/Catch</a>
-	</div>
-	<button class="DropdownBtn">Advanced &#9660</button>
-	<div class="DropdownContainer">
-	<a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
-	<a href="../Advanced/Classes.html">Classes</a>
-	<a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
-	<a href="../Advanced/Instantation.html">Instantation</a>
-	<a href="../Advanced/Inheritance.html">Inheritance</a>
-	<a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
-	<a href="../Advanced/Abstraction.html">Abstraction</a>
-	</div>
-	</div>
-	<div id="MainBody">
-	<h1>Try/Catch</h1>
+<!--Creates the heading area of the website with the menu and the search bar/button.-->
+<div id="TitleArea">
+    <img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
+    <span class="WebsiteTitle">Getting Into Programming</span>
+    <input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
+    <input type="submit"
+           onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');"
+           class="SearchButton"/>
+    <p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a
+            href="../../contact.html">Contact</a></p>
+    <hr/>
+
+
+</div>
+<!--Creates the vertical menu for the tutorial pages and links them to pages in each category.-->
+<div class="VerticalMenu">
+    <button class="DropdownBtn">Getting Started &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Getting Started/Introduction.html">Introduction</a>
+        <a href="../Getting Started/Before Starting.html">Before Starting</a>
+        <a href="../Getting Started/Setting up an IDE.html">Setting up an IDE</a>
+        <a href="../Getting Started/Hello World.html">Hello World</a>
+    </div>
+    <button class="DropdownBtn">Beginner &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Beginner/Data Types.html">Data Types</a>
+        <a href="../Beginner/Calculations.html">Calculations</a>
+        <a href="../Beginner/If Statements.html">IF Statements</a>
+        <a href="../Beginner/Loops.html">Loops</a>
+    </div>
+    <button class="DropdownBtn">Intermediate &#9660</button>
+    <div class="DropdownContainer">
+        <a href="Methods.html">Methods</a>
+        <a href="Arrays.html">Arrays</a>
+        <a href="String Manipulation.html">String Manipulation</a>
+        <a href="Try-Catch.html">Try/Catch</a>
+    </div>
+    <button class="DropdownBtn">Advanced &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
+        <a href="../Advanced/Classes.html">Classes</a>
+        <a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
+        <a href="../Advanced/Instantation.html">Instantation</a>
+        <a href="../Advanced/Inheritance.html">Inheritance</a>
+        <a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
+        <a href="../Advanced/Abstraction.html">Abstraction</a>
+    </div>
+</div>
+<!--Main body of the page.-->
+<div id="MainBody">
+    <h1>Try/Catch</h1>
+	<!--Creates the forward and backward arrows and links them to the correct webpages-->
 	<a class="BackwardArrow" href="String Manipulation.html">&#9668 Backward</a>
-	<a class="FowardArrow" href="../Advanced/OOP - Beginning.html">Foward &#9658</a>
-	<p>Try/Catches are used to try a section of code and if an exception occurs then it will catch that exception and then in the catch it be handled properly
-		for example sending a message saying an error has occurred to the user.</p>
-		<div class="CodeTabs">
-		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
-		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
-		<button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
-		</div>
-		
-	  <div id="Java" class="ContentOfTheTab">
-		  <p>public class main{</p>
-		  <p>public static void main(String[] args){</p>
-		  <p>int number;</p>
-		  <p>try{</p>
-		  <p>number = 10 / 0;</p>
-		  <p>} catch(Exception e) {</p>
-		  <p>System.out.println("An Error Has Occurred!");</p>
-		  <p>System.out.println(e);</p>
-		  <p>}</p>
-		  <p>}</p>
-		  <p>}</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/Java/Java%20Try-Catch.mp4" controls></video>
-		</div>
-	  <div id="C++" class="ContentOfTheTab">
-		<p>#include &lt;iostream&gt;</p>
-		  <p>#include &lt;string&gt;</p>
-		  <p>int main(){</p>
-		  <p>int number = 2;</p>
-		  <p>int divideNumber = 5;</p>
-		  <p>try{</p>
-		  <p>if (divideNumber == 0){</p>
-		  <p>throw "Divide number is equal to zero. Number can't be divided by zero!";</p>
-		  <p>} else{</p>
-		  <p>cout << number / divideNumber << endl;
-		  <p>}catch(const char* e){</p>
-		  <p>cout << "An Error Has Occurred!" << endl;</p>
-		  <p>cout << "Error: " + e + << endl;</p>
-		  <p>}</p>
-		  <p><br>divideNumber = 0;</p>
-		  <p><br>try{</p>
-		  <p>if (divideNumber == 0){</p>
-		  <p>throw "Divide number is equal to zero. Number can't be divided by zero!";</p>
-		  <p>} else{</p>
-		  <p>cout << number / divideNumber << endl;
-		  <p>}catch(const char* e){</p>
-		  <p>cout << "An Error Has Occurred!" << endl;</p>
-		  <p>cout << "Error: " + e + << endl;</p>
-		  <p>}</p>
-		  <p>return 0;</p>
-		  <p>}</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/C++/C++%20Try-Catch.mp4" controls></video>
-		</div>
-	  <div id="Python" class="ContentOfTheTab">
-		  <p>try:</p>
-		  <p> number = 20 / 0</p>
-		  <p>except:</p>
-		  <p> print("Error Has Occurred!")</p>
-		  <hr />
-		  <video class="TutorialVideos" src="../../Videos/Python/Python%20Try-Catch.mp4" controls></video>
-		</div>
-	</div>
-	<script>
+    <a class="FowardArrow" href="../Advanced/OOP - Beginning.html">Foward &#9658</a>
+    <p>Try/Catches are used to try a section of code and if an exception occurs then it will catch that exception and
+        then in the catch it be handled properly
+        for example sending a message saying an error has occurred to the user.</p>
+	<!--The Tabs of the webpage for the different programming languages code.-->
+	<div class="CodeTabs">
+        <button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
+        <button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
+        <button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
+    </div>
+
+    <div id="Java" class="ContentOfTheTab">
+        <p>public class main{</p>
+        <p>public static void main(String[] args){</p>
+        <p>int number;</p>
+        <p>try{</p>
+        <p>number = 10 / 0;</p>
+        <p>} catch(Exception e) {</p>
+        <p>System.out.println("An Error Has Occurred!");</p>
+        <p>System.out.println(e);</p>
+        <p>}</p>
+        <p>}</p>
+        <p>}</p>
+        <hr/>
+		<!--Video of Java running.-->
+		<video class="TutorialVideos" src="../../Videos/Java/Java%20Try-Catch.mp4" controls></video>
+    </div>
+    <div id="C++" class="ContentOfTheTab">
+        <p>#include &lt;iostream&gt;</p>
+        <p>#include &lt;string&gt;</p>
+        <p>int main(){</p>
+        <p>int number = 2;</p>
+        <p>int divideNumber = 5;</p>
+        <p>try{</p>
+        <p>if (divideNumber == 0){</p>
+        <p>throw "Divide number is equal to zero. Number can't be divided by zero!";</p>
+        <p>} else{</p>
+        <p>cout << number / divideNumber << endl;
+        <p>}catch(const char* e){</p>
+        <p>cout << "An Error Has Occurred!" << endl;</p>
+        <p>cout << "Error: " + e + << endl;</p>
+        <p>}</p>
+        <p><br>divideNumber = 0;</p>
+        <p><br>try{</p>
+        <p>if (divideNumber == 0){</p>
+        <p>throw "Divide number is equal to zero. Number can't be divided by zero!";</p>
+        <p>} else{</p>
+        <p>cout << number / divideNumber << endl;
+        <p>}catch(const char* e){</p>
+        <p>cout << "An Error Has Occurred!" << endl;</p>
+        <p>cout << "Error: " + e + << endl;</p>
+        <p>}</p>
+        <p>return 0;</p>
+        <p>}</p>
+        <hr/>
+		<!--Video of C++ running.-->
+		<video class="TutorialVideos" src="../../Videos/C++/C++%20Try-Catch.mp4" controls></video>
+    </div>
+    <div id="Python" class="ContentOfTheTab">
+        <p>try:</p>
+        <p> number = 20 / 0</p>
+        <p>except:</p>
+        <p> print("Error Has Occurred!")</p>
+        <hr/>
+		<!--Video of Python running.-->
+		<video class="TutorialVideos" src="../../Videos/Python/Python%20Try-Catch.mp4" controls></video>
+    </div>
+</div>
+<!--The Javascript for the vertical menu and the tabs.-->
+<script>
+	//Javascript For The Vertical Menu
 	var dropdownMenu = document.getElementsByClassName("DropdownBtn");
-	var i;
-	for (i = 0; i < dropdownMenu.length; i++) {
-		dropdownMenu[i].addEventListener("click", function () {
-			this.classList.toggle("active");
-			var dropdownContent = this.nextElementSibling;
-			if (dropdownContent.style.display === "block") {
-				dropdownContent.style.display = "none";
-			} else {
-				dropdownContent.style.display = "block";
-			}
-		})
-	}
+    var i;
+    for (i = 0; i < dropdownMenu.length; i++) {
+        dropdownMenu[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        })
+    }
 </script>
 <script>
+	//Javascript for the tabs.
 	function enterCode(event, programmingLanguage) {
-		var content, links;
+        var content, links;
 
-		content = document.getElementsByClassName("ContentOfTheTab");
-		for (var i = 0; i < content.length; i++) {
-			content[i].style.display = "none";
-		}
+        content = document.getElementsByClassName("ContentOfTheTab");
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
 
-		links = document.getElementsByClassName("CodeLink");
-		for (var i = 0; i < content.length; i++) {
-			links[i].className = links[i].className.replace(" active", "");
-		}
+        links = document.getElementsByClassName("CodeLink");
+        for (var i = 0; i < content.length; i++) {
+            links[i].className = links[i].className.replace(" active", "");
+        }
 
-		document.getElementById(programmingLanguage).style.display = "block";
-		event.currentTarget.className += " active";
-		document.getElementById("DefaultLanguage").click;
-	}
+        document.getElementById(programmingLanguage).style.display = "block";
+        event.currentTarget.className += " active";
+        document.getElementById("DefaultLanguage").click;
+    }
 </script>
 </body>
 </html>

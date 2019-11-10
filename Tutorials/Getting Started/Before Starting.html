@@ -1,166 +1,186 @@
 <!doctype html>
 <html>
 <head>
-<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
-<link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<title>Introduction</title>
+	<!--Links to the css files in CSS folder.-->
+	<link href="../../CSS/Programming Style.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Vertical Menu.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/Code Block.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+	<!--Title of the page.-->
+	<title>Introduction</title>
 </head>
 
 <body>
-	<div id="TitleArea">
-	<img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
-	<span class="WebsiteTitle">Getting Into Programming</span>
-	<input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
-		<input type="submit" onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');" class="SearchButton"/>
-	<p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a href="../../contact.html">Contact</a></p>	
-	<hr />
-		
-		
-	</div>
-	<div class="VerticalMenu">
-	<button class="DropdownBtn">Getting Started &#9660</button>
-	<div class="DropdownContainer">
-	<a href="Introduction.html">Introduction</a>
-	<a href="Before Starting.html">Before Starting</a>
-	<a href="Setting up an IDE.html">Setting up an IDE</a>
-	<a href="Hello World.html">Hello World</a>
-	</div>
-		<button class="DropdownBtn">Beginner &#9660</button>
-		<div class="DropdownContainer">
-			<a href="../Beginner/Data Types.html">Data Types</a>
-			<a href="../Beginner/Calculations.html">Calculations</a>
-			<a href="../Beginner/If Statements.html">IF Statements</a>
-			<a href="../Beginner/Loops.html">Loops</a>
-		</div>
-		<button class="DropdownBtn">Intermediate &#9660</button>
-		<div class="DropdownContainer">
-			<a href="../Intermediate/Methods.html">Methods</a>
-			<a href="../Intermediate/Arrays.html">Arrays</a>
-			<a href="../Intermediate/String Manipulation.html">String Manipulation</a>
-			<a href="../Intermediate/Try-Catch.html">Try/Catch</a>
-		</div>
-		<button class="DropdownBtn">Advanced &#9660</button>
-		<div class="DropdownContainer">
-			<a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
-			<a href="../Advanced/Classes.html">Classes</a>
-			<a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
-			<a href="../Advanced/Instantation.html">Instantiation</a>
-			<a href="../Advanced/Inheritance.html">Inheritance</a>
-			<a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
-			<a href="../Advanced/Abstraction.html">Abstraction</a>
-		</div>
-	</div>
-	<div id="MainBody">
-	<h1>Before Starting</h1>
+<!--Creates the heading area of the website with the menu and the search bar/button.-->
+<div id="TitleArea">
+    <img class="TitleImage" src="../../Images/Image of Code.jpg" alt="An Image of Code."/>
+    <span class="WebsiteTitle">Getting Into Programming</span>
+    <input type="search" class="SearchBox" placeholder="Search Google" name="q"/>
+    <input type="submit"
+           onclick="alert('This was supposed to site-search using google so that all pages related to the users input would appear but it isn\'t implemented yet!');"
+           class="SearchButton"/>
+    <p id="Menu"><a href="../../index.html">Home</a> | <a href="../../about.html">About</a> | <a
+            href="../../contact.html">Contact</a></p>
+    <hr/>
+
+
+</div>
+<!--Creates the vertical menu for the tutorial pages and links them to pages in each category.-->
+<div class="VerticalMenu">
+    <button class="DropdownBtn">Getting Started &#9660</button>
+    <div class="DropdownContainer">
+        <a href="Introduction.html">Introduction</a>
+        <a href="Before Starting.html">Before Starting</a>
+        <a href="Setting up an IDE.html">Setting up an IDE</a>
+        <a href="Hello World.html">Hello World</a>
+    </div>
+    <button class="DropdownBtn">Beginner &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Beginner/Data Types.html">Data Types</a>
+        <a href="../Beginner/Calculations.html">Calculations</a>
+        <a href="../Beginner/If Statements.html">IF Statements</a>
+        <a href="../Beginner/Loops.html">Loops</a>
+    </div>
+    <button class="DropdownBtn">Intermediate &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Intermediate/Methods.html">Methods</a>
+        <a href="../Intermediate/Arrays.html">Arrays</a>
+        <a href="../Intermediate/String Manipulation.html">String Manipulation</a>
+        <a href="../Intermediate/Try-Catch.html">Try/Catch</a>
+    </div>
+    <button class="DropdownBtn">Advanced &#9660</button>
+    <div class="DropdownContainer">
+        <a href="../Advanced/OOP - Beginning.html">Object-Oriented Programming - Beginning</a>
+        <a href="../Advanced/Classes.html">Classes</a>
+        <a href="../Advanced/Encapsulation & Constructors.html">Encapsulation And Constructors</a>
+        <a href="../Advanced/Instantation.html">Instantiation</a>
+        <a href="../Advanced/Inheritance.html">Inheritance</a>
+        <a href="../Advanced/Overloading & Overriding.html">Overloading And Overriding</a>
+        <a href="../Advanced/Abstraction.html">Abstraction</a>
+    </div>
+</div>
+<!--Main body of the page.-->
+<div id="MainBody">
+    <h1>Before Starting</h1>
+	<!--Creates the forward and backward arrows and links them to the correct webpages-->
 	<a class="BackwardArrow" href="Introduction.html">&#9668 Backward</a>
-	<a class="FowardArrow" href="Setting up an IDE.html">Foward &#9658</a>
-	<p>Before you start programming you'll need to install a few things before installing your IDE:</p>
-		<div class="CodeTabs">
-		<button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
-		<button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
-		<button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
-		</div>
-		
-	  <div id="Java" class="ContentOfTheTab">
-		<p>
-		With Java you'll need to install a JDK & JRE before installing your IDE.
-		</p>
+    <a class="FowardArrow" href="Setting up an IDE.html">Foward &#9658</a>
+    <p>Before you start programming you'll need to install a few things before installing your IDE:</p>
+	<!--The Tabs of the webpage for the different programming languages code.-->
+	<div class="CodeTabs">
+        <button class="CodeLink" onclick="enterCode(event, 'Java')" id="DefaultLanguage">Java</button>
+        <button class="CodeLink" onclick="enterCode(event, 'C++')">C++</button>
+        <button class="CodeLink" onclick="enterCode(event, 'Python')">Python</button>
+    </div>
 
-		<h1>JDK & JRE</h1>
+	<!--The actual instructions itself for Java, C++ and Python.-->
+	<div id="Java" class="ContentOfTheTab">
+        <p>
+            With Java you'll need to install a JDK & JRE before installing your IDE.
+        </p>
 
-		 <ol type="1">
-			 <li>Go to these links: <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html">JDK</a>
-				 and the <a href="https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">JRE</a> download the JDK and JRE exe files for your operating system. This will be mainly focusing on the windows version.
-			 </li>
-			 <li>
-				 Click on the JDK exe file and click on next to everything and let it install the JDK and then click close.
-				 That is you installed the JDK. This is a similar process with the JRE.
-			 </li>
-		 </ol>
-		  <p>That is you installed what you need before you install the IDE.</p>
-		</div>
-	  <div id="C++" class="ContentOfTheTab">
-		<p>
-		For C++ you can either download Visual Studio which we will get to with the IDE's or use MinGW.
-		</p>
+        <h1>JDK & JRE</h1>
 
-		  <h1>MinGW</h1>
+        <ol type="1">
+            <li>Go to these links: <a
+                    href="https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html">JDK</a>
+                and the <a href="https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">JRE</a>
+                download the JDK and JRE exe files for your operating system. This will be mainly focusing on the
+                windows version.
+            </li>
+            <li>
+                Click on the JDK exe file and click on next to everything and let it install the JDK and then click
+                close.
+                That is you installed the JDK. This is a similar process with the JRE.
+            </li>
+        </ol>
+        <p>That is you installed what you need before you install the IDE.</p>
+    </div>
+    <div id="C++" class="ContentOfTheTab">
+        <p>
+            For C++ you can either download Visual Studio which we will get to with the IDE's or use MinGW.
+        </p>
 
-		  <ol type="1">
-			  <li>
-				  Go to this link: <a href="https://osdn.net/projects/mingw/releases/">MinGW</a> and download the mingw-get-setup.exe and run it.
-			  </li>
-			  <li>
-				  Click on the exe and click install and let it install to your C: drive. Once it has installed the download manager click on the boxes to these packages.
-				  <ul>
-					  <li>
-						  mingw32-base-bin
-					  </li>
-					  <li>
-						  mingw-developer-toolkit-bin
-					  </li>
-					  <li>
-						  mingw32-gcc-g++-bin
-					  </li>
-					  <li>
-						  msys-base-bin
-					  </li>
-				  </ul>
-			  </li>
-		  </ol>
-          <p>That is you installed what you need before installing the IDE.</p>
-		</div>
-	  <div id="Python" class="ContentOfTheTab">
-		To use python on a IDE you'll need to install python.
+        <h1>MinGW</h1>
 
-          <h1>Python</h1>
+        <ol type="1">
+            <li>
+                Go to this link: <a href="https://osdn.net/projects/mingw/releases/">MinGW</a> and download the
+                mingw-get-setup.exe and run it.
+            </li>
+            <li>
+                Click on the exe and click install and let it install to your C: drive. Once it has installed the
+                download manager click on the boxes to these packages.
+                <ul>
+                    <li>
+                        mingw32-base-bin
+                    </li>
+                    <li>
+                        mingw-developer-toolkit-bin
+                    </li>
+                    <li>
+                        mingw32-gcc-g++-bin
+                    </li>
+                    <li>
+                        msys-base-bin
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>That is you installed what you need before installing the IDE.</p>
+    </div>
+    <div id="Python" class="ContentOfTheTab">
+        To use python on a IDE you'll need to install python.
 
-          <ol type="1">
-              <li>
-                  Go to this link: <a href="https://www.python.org/downloads/">Python</a> and click download python exe.
-              </li>
-              <li>
-                  Click on the exe and install to the default location. At the end of installation click close.
-              </li>
-          </ol>
-		  <p>That is you installed what you need before installing the IDE.</p>
-		</div>
-	</div>
-	<script>
+        <h1>Python</h1>
+
+        <ol type="1">
+            <li>
+                Go to this link: <a href="https://www.python.org/downloads/">Python</a> and click download python exe.
+            </li>
+            <li>
+                Click on the exe and install to the default location. At the end of installation click close.
+            </li>
+        </ol>
+        <p>That is you installed what you need before installing the IDE.</p>
+    </div>
+</div>
+<!--The Javascript for the vertical menu and the tabs.-->
+<script>
+	//Javascript For The Vertical Menu
 	var dropdownMenu = document.getElementsByClassName("DropdownBtn");
-	var i;
-	for (i = 0; i < dropdownMenu.length; i++) {
-		dropdownMenu[i].addEventListener("click", function () {
-			this.classList.toggle("active");
-			var dropdownContent = this.nextElementSibling;
-			if (dropdownContent.style.display === "block") {
-				dropdownContent.style.display = "none";
-			} else {
-				dropdownContent.style.display = "block";
-			}
-		})
-	}
+    var i;
+    for (i = 0; i < dropdownMenu.length; i++) {
+        dropdownMenu[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        })
+    }
 </script>
 <script>
+	//Javascript for the tabs.
 	function enterCode(event, programmingLanguage) {
-		var content, links;
+        var content, links;
 
-		content = document.getElementsByClassName("ContentOfTheTab");
-		for (var i = 0; i < content.length; i++) {
-			content[i].style.display = "none";
-		}
+        content = document.getElementsByClassName("ContentOfTheTab");
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
 
-		links = document.getElementsByClassName("CodeLink");
-		for (var i = 0; i < content.length; i++) {
-			links[i].className = links[i].className.replace(" active", "");
-		}
+        links = document.getElementsByClassName("CodeLink");
+        for (var i = 0; i < content.length; i++) {
+            links[i].className = links[i].className.replace(" active", "");
+        }
 
-		document.getElementById(programmingLanguage).style.display = "block";
-		event.currentTarget.className += " active";
-		document.getElementById("DefaultLanguage").click;
-	}
+        document.getElementById(programmingLanguage).style.display = "block";
+        event.currentTarget.className += " active";
+        document.getElementById("DefaultLanguage").click;
+    }
 </script>
 </body>
 </html>
