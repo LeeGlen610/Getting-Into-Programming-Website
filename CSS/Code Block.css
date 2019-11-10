@@ -42,6 +42,7 @@
     font-size: 25px;
 }
 
+/*When the */
 @keyframes fadeEffect{
 	from{opacity: 0}
 	to{opacity: 1}

@@ -50,6 +50,7 @@
 	padding-left: 8px;
 }
 
+/*This will change the menu depending on the web browser size.*/
 @media only screen and (max-width: 811px){
 	.VerticalMenu{
 		top:210px;
