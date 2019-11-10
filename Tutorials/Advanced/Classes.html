@@ -134,11 +134,172 @@
 		  <p>}</p>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
-		<p>To create a class </p>
+		<p>To create a class you need to right click on source files and then hover over add and then click class. Type in the name of the class and then press ok.
+        The .cpp file and .h file will be created.</p>
+          <h1>Animal .h File</h1>
+          <p><br>#ifndef ANIMAL_H</p>
+          <p>#define ANIMAL_H</p>
+          <p><br>#include &lt;iostream&gt;</p>
+          <p>#include &lt;string&gt;</p>
+          <p><br>using namespace std;</p>
+          <p><br>class Animal {</p>
+          <p>private:</p>
+          <p>string name;</p>
+          <p>int age;</p>
+          <p>double height;</p>
+          <p>string type;</p>
+          <p>public:</p>
+          <p>string getName();</p>
+          <p>void setName(string);</p>
+          <p>int getAge();</p>
+          <p>void setAge(int);</p>
+          <p>double getHeight();</p>
+          <p>void setHeight(double);</p>
+          <p>string getType();</p>
+          <p>void setType(string);</p>
+          <p>void speak();</p>
+          <p>};</p>
+          <p>#endif</p>
+          <h1>Animal .cpp File</h1>
+          <p>#include "Animal.h"</p>
+          <p><br>String Animal::getName(){</p>
+          <p>return name;</p>
+          <p>}</p>
+          <p><br>void Animal::setName(String name){</p>
+          <p>this.name = name;</p>
+          <p>}</p>
+          <p><br>int Animal::getAge(){</p>
+          <p>return age;</p>
+          <p>}</p>
+          <p><br>void Animal::setAge(int age){</p>
+          <p>this.age = age;</p>
+          <p>}</p>
+          <p><br>double Animal::getHeight(){</p>
+          <p>return height;</p>
+          <p>}</p>
+          <p><br>void Animal::setHeight(double height){</p>
+          <p>this.height = height;</p>
+          <p>}</p>
+          <p><br>String Animal::getType(){</p>
+          <p>return type;</p>
+          <p>}</p>
+          <p><br>void Animal::setType(String type){</p>
+          <p>this.type = type;</p>
+          <p>}</p>
+          <p><br>void Animal::speak(){</p>
+          <p>System.out.println("Hello!");</p>
+          <p>}</p>
+          <h1>Bird .h File</h1>
+          <p><br>#ifndef BIRD_H</p>
+          <p>#define BIRD_H</p>
+          <p><br>#include &lt;iostream&gt;</p>
+          <p>#include &lt;string&gt;</p>
+          <p><br>using namespace std;</p>
+          <p><br>class Bird : public Animal {</p>
+          <p>private:</p>
+          <p>bool canFly;</p>
+          <p>public:</p>
+          <p>bool canFly();</p>
+          <p>void setFly();</p>
+          <p>void speak();</p>
+          <p>};</p>
+          <p>#endif</p>
+          <h1>Bird .cpp File</h1>
+          <p>#include "Bird.h"</p>
+          <p><br>boolean Bird::canFly(){</p>
+          <p>return canFly;</p>
+          <p>}</p>
+          <p><br>void Bird::setCanFly(){</p>
+          <p>canFly = !canFly;</p>
+          <p>}</p>
+          <p><br>void Bird::speak(){</p>
+          <p>System.out.println("Tweet!");</p>
+          <p>}</p>
+          <h1>Dog .h File</h1>
+          <p><br>#ifndef DOG_H</p>
+          <p>#define DOG_H</p>
+          <p><br>#include &lt;iostream&gt;</p>
+          <p>#include &lt;string&gt;</p>
+          <p><br>using namespace std;</p>
+          <p><br>class Dog : public Animal {</p>
+          <p>public:</p>
+          <p>void sniff();</p>
+          <p>void speak();</p>
+          <p>};</p>
+          <p>#endif</p>
+          <h1>Dog .cpp File</h1>
+          <p>#include "Dog.h"</p>
+          <p><br>void Dog::sniff(){</p>
+          <p>System.out.println("Sniff Sniff!");</p>
+          <p>}</p>
+          <p><br>void Dog::speak(){</p>
+          <p>System.out.println("Bark!");</p>
+          <p>}</p>
+          <h1>Cat .h File</h1>
+          <p><br>#ifndef CAT_H</p>
+          <p>#define CAT_H</p>
+          <p><br>#include &lt;iostream&gt;</p>
+          <p>#include &lt;string&gt;</p>
+          <p><br>using namespace std;</p>
+          <p><br>class Cat : public Animal {</p>
+          <p>public:</p>
+          <p>void claws();</p>
+          <p>void speak();</p>
+          <p>};</p>
+          <p>#endif</p>
+          <h1>Cat .cpp File</h1>
+          <p><br>void Cat::speak(){</p>
+          <p>System.out.println("Meow!");</p>
+          <p>}</p>
+          <p><br>void Cat::sniff(){</p>
+          <p>System.out.println("Hiss! The cat has now scratched you!");</p>
+          <p>}</p>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rhoncus libero.
-		</div>
+          <h1>Animal Class:</h1>
+		<p>class Animal:</p>
+          <p> name = ""</p>
+          <p> age = 0</p>
+          <p> height = 0.0</p>
+          <p> type = ""</p>
+          <p><br> def getName(self):</p>
+          <p>  return self.name</p>
+          <p><br> def setName(self, name):</p>
+          <p>  self.name = name</p>
+          <p><br> def getAge(self):</p>
+          <p>  return self.age</p>
+          <p><br> def getHeight(self):</p>
+          <p>  return self.height</p>
+          <p><br> def setHeight(self, height):</p>
+          <p>  self.height = height</p>
+          <p><br> def getType(self):</p>
+          <p>  return self.type</p>
+          <p><br> def setName(self, type):</p>
+          <p>  self.type = type</p>
+          <p><br> def speak(self):</p>
+          <p>  print("Hello!")</p>
+          <h1>Bird Class:</h1>
+          <p><br>class Bird(Animal):</p>
+          <p>canFly = False</p>
+          <p><br> def canFly(self):</p>
+          <p>  return self.canFly</p>
+          <p><br> def setFly(self):</p>
+          <p>  self.canFly = !canFly</p>
+          <p> def speak(self):</p>
+          <p>  print("Tweet!")</p>
+          <h1>Dog Class:</h1>
+          <p>class Dog(Animal):</p>
+          <p> def sniff(self):</p>
+          <p>  print("Sniff Sniff!")</p>
+          <p> def speak(self):</p>
+          <p>  print("Bark!")</p>
+          <h1>Cat Class:</h1>
+          <p>class Cat(Animal):</p>
+          <p> def speak(self):</p>
+          <p>  print("Meow!")</p>
+          <p> def claws(self):</p>
+          <p>  print("Hiss! The cat has now scratched you!")</p>
+      </div>
 	</div>
 	<script>
 	var dropdownMenu = document.getElementsByClassName("DropdownBtn");
