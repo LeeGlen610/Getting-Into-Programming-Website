@@ -42,7 +42,7 @@
     font-size: 25px;
 }
 
-/*When the */
+/*Makes the tabs fade in.*/
 @keyframes fadeEffect{
 	from{opacity: 0}
 	to{opacity: 1}

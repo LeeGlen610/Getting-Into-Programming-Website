@@ -92,24 +92,5 @@
         })
     }
 </script>
-<script>
-	//Javascript for the tabs.
-	function enterCode(event, programmingLanguage) {
-        var content, links;
-
-        content = document.getElementsByClassName("ContentOfTheTab");
-        for (var i = 0; i < content.length; i++) {
-            content[i].style.display = "none";
-        }
-
-        links = document.getElementsByClassName("CodeLink");
-        for (var i = 0; i < content.length; i++) {
-            links[i].className = links[i].className.replace(" active", "");
-        }
-
-        document.getElementById(programmingLanguage).style.display = "block";
-        event.currentTarget.className += " active";
-    }
-</script>
 </body>
 </html>
