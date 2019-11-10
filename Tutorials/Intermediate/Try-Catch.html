@@ -69,34 +69,53 @@
 		  <p>public static void main(String[] args){</p>
 		  <p>int number;</p>
 		  <p>try{</p>
-		  <p>number = "Hello World!"</p>
+		  <p>number = 10 / 0;</p>
 		  <p>} catch(Exception e) {</p>
 		  <p>System.out.println("An Error Has Occurred!");</p>
 		  <p>System.out.println(e);</p>
 		  <p>}</p>
 		  <p>}</p>
 		  <p>}</p>
+		  <hr />
+		  <video class="TutorialVideos" src="../../Videos/Java/Java%20Try-Catch.mp4" controls></video>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
 		<p>#include &lt;iostream&gt;</p>
 		  <p>#include &lt;string&gt;</p>
 		  <p>int main(){</p>
-		  <p>int number;</p>
+		  <p>int number = 2;</p>
+		  <p>int divideNumber = 5;</p>
 		  <p>try{</p>
-		  <p>number = "Hello World!";</p>
-		  <p>}catch(int e){</p>
+		  <p>if (divideNumber == 0){</p>
+		  <p>throw "Divide number is equal to zero. Number can't be divided by zero!";</p>
+		  <p>} else{</p>
+		  <p>cout << number / divideNumber << endl;
+		  <p>}catch(const char* e){</p>
 		  <p>cout << "An Error Has Occurred!" << endl;</p>
-		  <p>cout << "Error Code: " + e + << endl;</p>
+		  <p>cout << "Error: " + e + << endl;</p>
+		  <p>}</p>
+		  <p><br>divideNumber = 0;</p>
+		  <p><br>try{</p>
+		  <p>if (divideNumber == 0){</p>
+		  <p>throw "Divide number is equal to zero. Number can't be divided by zero!";</p>
+		  <p>} else{</p>
+		  <p>cout << number / divideNumber << endl;
+		  <p>}catch(const char* e){</p>
+		  <p>cout << "An Error Has Occurred!" << endl;</p>
+		  <p>cout << "Error: " + e + << endl;</p>
 		  <p>}</p>
 		  <p>return 0;</p>
 		  <p>}</p>
+		  <hr />
+		  <video class="TutorialVideos" src="../../Videos/C++/C++%20Try-Catch.mp4" controls></video>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
-		  <p>int number</p>
 		  <p>try:</p>
-		  <p>number = "Hello World!"</p>
+		  <p> number = 20 / 0</p>
 		  <p>except:</p>
-		  <p>print("Error Has Occurred!")</p>
+		  <p> print("Error Has Occurred!")</p>
+		  <hr />
+		  <video class="TutorialVideos" src="../../Videos/Python/Python%20Try-Catch.mp4" controls></video>
 		</div>
 	</div>
 	<script>

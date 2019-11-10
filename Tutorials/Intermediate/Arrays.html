@@ -66,10 +66,11 @@
 		</div>
 		
 	  <div id="Java" class="ContentOfTheTab">
+		  <p>import java.util.ArrayList; <br></p>
 		  <p>public class Main{</p>
 		  <p>public static void Main(String[] args){</p>
 		  <p>int[] tenNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</p>
-		  <p><br>for (int i = 0; i < tenNumbers.length; i++){</p>
+		  <p><br>for (int i = 0; i < 10; i++){</p>
 		  <p>System.out.println(tenNumbers[i]);</p>
 		  <p>}</p>
 		  <p><br>ArrayList&lt;Integer&gt; moreNumbers = new ArrayList&lt;Integer&gt;();</p>
@@ -80,13 +81,15 @@
 		  <p>}</p>
 		  <p>}</p>
 		  <p>}</p>
+		  <hr />
+		  <video class="TutorialVideos" src="../../Videos/Java/Java%20Arrays.mp4" controls></video>
 		</div>
 	  <div id="C++" class="ContentOfTheTab">
 		<p>#include &lt;iostream&gt;</p>
 		  <p>#include &lt;vector&gt;</p>
 		  <p>using namespace std;</p>
 		  <p><br>int main(){</p>
-		  <p>int[] tenNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</p>
+		  <p>int tenNumbers [] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</p>
 		  <p><br>for (int i = 0; i < tenNumbers.length; i++){</p>
 		  <p>cout << tenNumbers[i] << endl;</p>
 		  <p>}</p>
@@ -98,17 +101,20 @@
 		  <p>}</p>
 		  <p>return 0;</p>
 		  <p>}</p>
+		  <hr />
+		  <video class="TutorialVideos" src="../../Videos/C++/C++%20Arrays.mp4" controls></video>
 		</div>
 	  <div id="Python" class="ContentOfTheTab">
 		  <p>import array as anArray</p>
-		  <p>tenNumbers = anArray.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);</p>
-		  <p><br>for (int i = 0; i < tenNumbers.length; i++){</p>
-		  <p>print(tenNumbers[i])</p>
-		  <p>}</p>
-		  <p>tenNumbers = anArray.append(11);</p>
-		  <p>tenNumbers = anArray.extend([12, 13, 14, 15])</p>
+		  <p>tenNumbers = anArray.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])</p>
+		  <p><br>for i in tenNumbers:</p>
+		  <p> print(i)</p>
+		  <p>tenNumbers.append(11)</p>
+		  <p>tenNumbers.extend([12, 13, 14, 15])</p>
 		  <p>for number in tenNumbers:</p>
-		  <p>print(number)</p>
+		  <p> print(number)</p>
+		  <hr />
+		  <video class="TutorialVideos" src="../../Videos/Python/Python%20Arrays.mp4" controls></video>
 		</div>
 	</div>
 	<script>
